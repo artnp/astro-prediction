@@ -4,38 +4,65 @@
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+    #mydivabc {
+      position: absolute;
+      z-index: 9;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    
+    #mydivheaderabc {
+      padding: 10px;
+      cursor: move;
+      z-index: 10;
+    }
+    </style>
 <title>ระบบทำนายดวงสากล</title>
 </head>
 <body>
+    <div id="mydivabc">
+        <div id="mydivheaderabc"><b>⤩</b> ลากเลื่อนตรงนี้
+         <div id="widget_coa_container" lat="40.71427" lng="-74.00597" place="Bangkok, Thailand"><a id="coa_astro" href="https://astro-charts.com"></a></div>
+            <script type="text/javascript" src="https://astro-charts.com/client/common/widget/js/widget-coa.min.js"></script>
+      </div></div>
     <div id="outframe">
     <center>
 	<img src="https://mymodernmet.com/wp/wp-content/uploads/2021/04/astrology-history-1.jpg" width="5%">
     <h5>- ระบบทำนายดวงสากล -</h5>
-   
 
-    <table>
+      <table class="table table-sm">
+        <tplanet>
+          <tr>
+            <th scope="col">ดาว</th>
+            <th scope="col">อยู่ราศี</th>
+            <th scope="col">ทับอีกราศี</th>
+            <th scope="col">อยู่ภพ</th>
+            <th scope="col">ดาว</th>
+            <th scope="col">อยู่ราศี</th>
+            <th scope="col">ทับอีกราศี</th>
+            <th scope="col">อยู่ภพ</th>
+          </tr>
+        </tplanet>
         <tbody>
-        <tr>
-            <td> <div id="widget_coa_container" lat="40.71427" lng="-74.00597" place="Bangkok, Thailand"><a id="coa_astro" href="https://astro-charts.com"></a></div>
-                <script type="text/javascript" src="https://astro-charts.com/client/common/widget/js/widget-coa.min.js"></script> </td>
-
-        <td> <table class="table table-sm">
-            <tplanet>
-              <tr>
-                <th scope="col">ดาว</th>
-                <th scope="col">อยู่ราศี</th>
-                <th scope="col">ทับอีกราศี</th>
-                <th scope="col">อยู่ภพ</th>
-                <th scope="col">ดาว</th>
-                <th scope="col">อยู่ราศี</th>
-                <th scope="col">ทับอีกราศี</th>
-                <th scope="col">อยู่ภพ</th>
-              </tr>
-            </tplanet>
-            <tbody>
-              <tr>
-                <th><h4><div title="ดาวอาทิตย์">☉ Sun</div></h4></th>
-                <td><select id="sun" class="sun" style="font-size:20px;">
+          <tr>
+            <th><h4><div title="ดาวอาทิตย์">☉ Sun</div></h4></th>
+            <td><select id="sun" class="sun" style="font-size:20px;">
+                <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value='sagittarius'>♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="suns" class="suns" style="font-size:20px;">
                     <option style="display:none;"></option>
                   <option value="aries">♈︎ Aries</option>
                   <option value="taurus">♉︎ Taurus</option>
@@ -50,467 +77,485 @@
                   <option value="aquarius">♒︎ Aquarius</option>
                   <option value="pisces">♓︎ Pisces</option>
                       </select></td>
-                      <td><select id="suns" class="suns" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="aries">♈︎ Aries</option>
-                      <option value="taurus">♉︎ Taurus</option>
-                      <option value="gemini">♊︎ Gemini</option>
-                      <option value="cancer">♋︎ Cancer</option>
-                      <option value="leo">♌︎ Leo</option>
-                      <option value="virgo">♍︎ Virgo</option>
-                      <option value="libra">♎︎ Libra</option>
-                      <option value="scorpius">♏︎ Scorpius</option>
-                      <option value='sagittarius'>♐︎ Sagittarius</option>
-                      <option value="capricornus">♑︎ Capricornus</option>
-                      <option value="aquarius">♒︎ Aquarius</option>
-                      <option value="pisces">♓︎ Pisces</option>
-                          </select></td>
-                      <td><select id="sun_house" class="sun_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td>
-                <td><h4><div title="ดาวพฤหัส">♃ Jupiter</div></h4></td>
-                <td><select id="jupiter" class="jupiter" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+                  <td><select id="sun_house" class="sun_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="jupiters" class="jupiters" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="jupiter_house" class="jupiter_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td>
-                    </tr><tr>
-                <th><h4><div title="ดาวจันทร์">☾ Moon</div></h4></th>
-                <td><select id="moon" class="moon" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+            <td><h4><div title="ดาวพฤหัส">♃ Jupiter</div></h4></td>
+            <td><select id="jupiter" class="jupiter" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="jupiters" class="jupiters" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="jupiter_house" class="jupiter_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="moons" class="moons" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="moon_house" class="moon_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td>
-                <td><h4><div title="ดาวเสาร์ ">♄ Saturn</div></h4></td>
-                <td><select id="saturn" class="saturn" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
-                      </select></td>   
-                      <td><select id="saturns" class="saturns" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>   
-                      <td><select id="saturn_house" class="saturn_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td></tr><tr>
-                <th><h5><div title="ดาวพุธ"> Mercury ☿</div></h5></th>
-                <td><select id="mercury" class="mercury" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+                </tr><tr>
+            <th><h4><div title="ดาวจันทร์">☾ Moon</div></h4></th>
+            <td><select id="moon" class="moon" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="moons" class="moons" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="moon_house" class="moon_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="mercurys" class="mercurys" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="mercury_house" class="mercury_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td>
-                <td><h5><div title="ดาวยูเรนัส">Uranus ♅</div></h5></td>
-                <td><select id="uranus" class="uranus" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+            <td><h4><div title="ดาวเสาร์ ">♄ Saturn</div></h4></td>
+            <td><select id="saturn" class="saturn" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>   
+                  <td><select id="saturns" class="saturns" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>   
+                  <td><select id="saturn_house" class="saturn_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                      </select></td></tr><tr>
+            <th><h5><div title="ดาวพุธ"> Mercury ☿</div></h5></th>
+            <td><select id="mercury" class="mercury" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="mercurys" class="mercurys" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="mercury_house" class="mercury_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="uranuss" class="uranuss" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="uranus_house" class="uranus_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td>
-                    </tr><tr>
-                <th scope="row"><h5><div title="ดาวศุกร์">Venus ♀</div></h5></th>
-                <td><select id="venus" class="venus" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+            <td><h5><div title="ดาวยูเรนัส">Uranus ♅</div></h5></td>
+            <td><select id="uranus" class="uranus" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="uranuss" class="uranuss" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="uranus_house" class="uranus_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="venuss" class="venuss" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="venus_house" class="venus_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td>
-                <td><h4><div title="ดาวเนปจูน">♆ Neptune</div></h4></td>
-                <td><select id="neptune" class="neptune" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+                </tr><tr>
+            <th scope="row"><h5><div title="ดาวศุกร์">Venus ♀</div></h5></th>
+            <td><select id="venus" class="venus" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="venuss" class="venuss" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="venus_house" class="venus_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="neptunes" class="neptunes" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="neptune_house" class="neptune_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td></tr><tr>
-                <th scope="row"><h3><div title="ดาวอังคาร">♂ Mars</div></h3></th>
-                <td><select id="mars" class="mars" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+            <td><h4><div title="ดาวเนปจูน">♆ Neptune</div></h4></td>
+            <td><select id="neptune" class="neptune" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="neptunes" class="neptunes" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="neptune_house" class="neptune_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                      </select></td></tr><tr>
+            <th scope="row"><h3><div title="ดาวอังคาร">♂ Mars</div></h3></th>
+            <td><select id="mars" class="mars" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="marss" class="marss" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="mars_house" class="mars_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="marss" class="marss" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="mars_house" class="mars_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                          </select></td>
-                <td><h4><div title="ดาวพลูโต">♇ Pluto</div></h4></td>
-                <td><select id="pluto" class="pluto" style="font-size:20px;">
-                  <option style="display:none;"></option>
-                  <option value="aries">♈︎ Aries</option>
-                  <option value="taurus">♉︎ Taurus</option>
-                  <option value="gemini">♊︎ Gemini</option>
-                  <option value="cancer">♋︎ Cancer</option>
-                  <option value="leo">♌︎ Leo</option>
-                  <option value="virgo">♍︎ Virgo</option>
-                  <option value="libra">♎︎ Libra</option>
-                  <option value="scorpius">♏︎ Scorpius</option>
-                  <option value="sagittarius">♐︎ Sagittarius</option>
-                  <option value="capricornus">♑︎ Capricornus</option>
-                  <option value="aquarius">♒︎ Aquarius</option>
-                  <option value="pisces">♓︎ Pisces</option>
+            <td><h4><div title="ดาวพลูโต">♇ Pluto</div></h4></td>
+            <td><select id="pluto" class="pluto" style="font-size:20px;">
+              <option style="display:none;"></option>
+              <option value="aries">♈︎ Aries</option>
+              <option value="taurus">♉︎ Taurus</option>
+              <option value="gemini">♊︎ Gemini</option>
+              <option value="cancer">♋︎ Cancer</option>
+              <option value="leo">♌︎ Leo</option>
+              <option value="virgo">♍︎ Virgo</option>
+              <option value="libra">♎︎ Libra</option>
+              <option value="scorpius">♏︎ Scorpius</option>
+              <option value="sagittarius">♐︎ Sagittarius</option>
+              <option value="capricornus">♑︎ Capricornus</option>
+              <option value="aquarius">♒︎ Aquarius</option>
+              <option value="pisces">♓︎ Pisces</option>
+                  </select></td>
+                  <td><select id="plutos" class="plutos" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                    <option value="aries">♈︎ Aries</option>
+                    <option value="taurus">♉︎ Taurus</option>
+                    <option value="gemini">♊︎ Gemini</option>
+                    <option value="cancer">♋︎ Cancer</option>
+                    <option value="leo">♌︎ Leo</option>
+                    <option value="virgo">♍︎ Virgo</option>
+                    <option value="libra">♎︎ Libra</option>
+                    <option value="scorpius">♏︎ Scorpius</option>
+                    <option value="sagittarius">♐︎ Sagittarius</option>
+                    <option value="capricornus">♑︎ Capricornus</option>
+                    <option value="aquarius">♒︎ Aquarius</option>
+                    <option value="pisces">♓︎ Pisces</option>
+                        </select></td>
+                  <td><select id="pluto_house" class="pluto_house" style="font-size:20px;">
+                    <option style="display:none;"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value='9'>9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                       </select></td>
-                      <td><select id="plutos" class="plutos" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                        <option value="aries">♈︎ Aries</option>
-                        <option value="taurus">♉︎ Taurus</option>
-                        <option value="gemini">♊︎ Gemini</option>
-                        <option value="cancer">♋︎ Cancer</option>
-                        <option value="leo">♌︎ Leo</option>
-                        <option value="virgo">♍︎ Virgo</option>
-                        <option value="libra">♎︎ Libra</option>
-                        <option value="scorpius">♏︎ Scorpius</option>
-                        <option value="sagittarius">♐︎ Sagittarius</option>
-                        <option value="capricornus">♑︎ Capricornus</option>
-                        <option value="aquarius">♒︎ Aquarius</option>
-                        <option value="pisces">♓︎ Pisces</option>
-                            </select></td>
-                      <td><select id="pluto_house" class="pluto_house" style="font-size:20px;">
-                        <option style="display:none;"></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value='9'>9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
+                </tr></tbody></table>
+                  <table class="table table-hover">
+                    <tplanet>
+                      <tr>
+                        <th scope="col">ภพ</th>
+                        <th scope="col">อยู่ราศี</th>
+                        <th scope="col">ภพ</th>
+                        <th scope="col">อยู่ราศี</th>
+                      </tr>
+                    </tplanet>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1
+            </th>
+                        <td><select id="house_1" class="house_1" style="font-size:20px;">
+                            <option value="aries">♈︎ Aries</option>
+                            <option value="taurus">♉︎ Taurus</option>
+                            <option value="gemini">♊︎ Gemini</option>
+                            <option value="cancer">♋︎ Cancer</option>
+                            <option value="leo">♌︎ Leo</option>
+                            <option value="virgo">♍︎ Virgo</option>
+                            <option value="libra">♎︎ Libra</option>
+                            <option value="scorpius">♏︎ Scorpius</option>
+                            <option value="sagittarius">♐︎ Sagittarius</option>
+                            <option value="capricornus">♑︎ Capricornus</option>
+                            <option value="aquarius">♒︎ Aquarius</option>
+                            <option value="pisces">♓︎ Pisces</option>
                           </select></td>
-                    </tr></tbody></table>
-                      <table class="table table-hover">
-                        <tplanet>
-                          <tr>
-                            <th scope="col">ภพ</th>
-                            <th scope="col">อยู่ราศี</th>
-                            <th scope="col">ภพ</th>
-                            <th scope="col">อยู่ราศี</th>
-                          </tr>
-                        </tplanet>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1
-                </th>
-                            <td><select id="house_1" class="house_1" style="font-size:20px;">
+                        <td><b>7</b></td>
+                        <td>
+                            <select id="house_7" class="house_7" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select> </td></tr><tr>
+                        <th scope="row">2</th>
+                        <td><select id="house_2" class="house_2" style="font-size:20px;">
+                            <option style="display:none;"></option>
                                 <option value="aries">♈︎ Aries</option>
                                 <option value="taurus">♉︎ Taurus</option>
                                 <option value="gemini">♊︎ Gemini</option>
@@ -524,245 +569,248 @@
                                 <option value="aquarius">♒︎ Aquarius</option>
                                 <option value="pisces">♓︎ Pisces</option>
                               </select></td>
-                            <td><b>7</b></td>
-                            <td>
-                                <select id="house_7" class="house_7" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select> </td></tr><tr>
-                            <th scope="row">2</th>
-                            <td><select id="house_2" class="house_2" style="font-size:20px;">
+                        <td><b>8 </b></td>
+                        <td><select id="house_8" class="house_8" style="font-size:20px;">
                                 <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select></td>
-                            <td><b>8 </b></td>
-                            <td><select id="house_8" class="house_8" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select> 
-                            </td></tr><tr>
-                            <th scope="row">3</th>
-                            <td><select id="house_3" class="house_3" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select></td>
-                            <td><b>9</b></td>
-                            <td><select id="house_9" class="house_9" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select></td></tr><tr>
-                            <th scope="row">4</th>
-                            <td><select id="house_4" class="house_4" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select> </td>
-                            <td><b>10</b></td>
-                            <td>
-                                <select id="house_10" class="house_10" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select></td></tr><tr>
-                            <th scope="row">5</th>
-                            <td><select id="house_5" class="house_5" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select> </td>
-                            <td><b>11</b></td>
-                            <td><select id="house_11" class="house_11" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select> </td></tr><tr>
-                            <th scope="row">6</th>
-                            <td>
-                                <select id="house_6" class="house_6" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select> 
-                            </td>
-                            <td><b>12</b></td>
-                            <td>
-                                <select id="house_12" class="house_12" style="font-size:20px;">
-                                    <option style="display:none;"></option>
-                                    <option value="aries">♈︎ Aries</option>
-                                    <option value="taurus">♉︎ Taurus</option>
-                                    <option value="gemini">♊︎ Gemini</option>
-                                    <option value="cancer">♋︎ Cancer</option>
-                                    <option value="leo">♌︎ Leo</option>
-                                    <option value="virgo">♍︎ Virgo</option>
-                                    <option value="libra">♎︎ Libra</option>
-                                    <option value="scorpius">♏︎ Scorpius</option>
-                                    <option value="sagittarius">♐︎ Sagittarius</option>
-                                    <option value="capricornus">♑︎ Capricornus</option>
-                                    <option value="aquarius">♒︎ Aquarius</option>
-                                    <option value="pisces">♓︎ Pisces</option>
-                                  </select></td></tr></tbody></table>
-   <center> <button class="btn btn-danger" onsubmit="predict()" style="font-size:24px">ทำนาย</button></center>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <center>
-            <div id="result"><div class="animate__animated animate__fadeIn">
-    <font size="4">
-    <b><div class="card" id="suna"></div></b><div id="sunb"></div>
-    <b><div class="card" id="moona"></div></b><div id="moonb"></div>
-    <b><div class="card" id="mercurya"></div></b><div id="mercuryb"></div>
-    <b><div class="card" id="venusa"></div></b><div id="venusb"></div>
-    <b><div class="card" id="marsa"></div></b><div id="marsb"></div>
-    <b><div class="card" id="jupitera"></div></b><div id="jupiterb"></div>
-    <b><div class="card" id="saturna"></div></b><div id="saturnb"></div>
-    <b><div class="card" id="uranusa"></div></b><div id="uranusb"></div>
-    <b><div class="card" id="neptunea"></div></b><div id="neptuneb"></div>
-    <b><div class="card" id="plutoa"></div></b><div id="plutob"></div>
-    
-    <b><div class="card" id="sunas"></div></b><div id="sunbs"></div>
-    <b><div class="card" id="moonas"></div></b><div id="moonbs"></div>
-    <b><div class="card" id="mercuryas"></div></b><div id="mercurybs"></div>
-    <b><div class="card" id="venusas"></div></b><div id="venusbs"></div>
-    <b><div class="card" id="marsas"></div></b><div id="marsbs"></div>
-    <b><div class="card" id="jupiteras"></div></b><div id="jupiterbs"></div>
-    <b><div class="card" id="saturnas"></div></b><div id="saturnbs"></div>
-    <b><div class="card" id="uranusas"></div></b><div id="uranusbs"></div>
-    <b><div class="card" id="neptuneas"></div></b><div id="neptunebs"></div>
-    <b><div class="card" id="plutoas"></div></b><div id="plutobs"></div>
-    
-    <b><div class="card" id="sunc"></div></b><div id="sund"></div>
-    <b><div class="card" id="moonc"></div></b><div id="moond"></div>
-    <b><div class="card" id="mercuryc"></div></b><div id="mercuryd"></div>
-    <b><div class="card" id="venusc"></div></b><div id="venusd"></div>
-    <b><div class="card" id="marsc"></div></b><div id="marsd"></div>
-    <b><div class="card" id="jupiterc"></div></b><div id="jupiterd"></div>
-    <b><div class="card" id="saturnc"></div></b><div id="saturnd"></div>
-    <b><div class="card" id="uranusc"></div></b><div id="uranusd"></div>
-    <b><div class="card" id="neptunec"></div></b><div id="neptuned"></div>
-    <b><div class="card" id="plutoc"></div></b><div id="plutod"></div>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select> 
+                        </td></tr><tr>
+                        <th scope="row">3</th>
+                        <td><select id="house_3" class="house_3" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select></td>
+                        <td><b>9</b></td>
+                        <td><select id="house_9" class="house_9" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select></td></tr><tr>
+                        <th scope="row">4</th>
+                        <td><select id="house_4" class="house_4" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select> </td>
+                        <td><b>10</b></td>
+                        <td>
+                            <select id="house_10" class="house_10" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select></td></tr><tr>
+                        <th scope="row">5</th>
+                        <td><select id="house_5" class="house_5" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select> </td>
+                        <td><b>11</b></td>
+                        <td><select id="house_11" class="house_11" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select> </td></tr><tr>
+                        <th scope="row">6</th>
+                        <td>
+                            <select id="house_6" class="house_6" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select> 
+                        </td>
+                        <td><b>12</b></td>
+                        <td>
+                            <select id="house_12" class="house_12" style="font-size:20px;">
+                                <option style="display:none;"></option>
+                                <option value="aries">♈︎ Aries</option>
+                                <option value="taurus">♉︎ Taurus</option>
+                                <option value="gemini">♊︎ Gemini</option>
+                                <option value="cancer">♋︎ Cancer</option>
+                                <option value="leo">♌︎ Leo</option>
+                                <option value="virgo">♍︎ Virgo</option>
+                                <option value="libra">♎︎ Libra</option>
+                                <option value="scorpius">♏︎ Scorpius</option>
+                                <option value="sagittarius">♐︎ Sagittarius</option>
+                                <option value="capricornus">♑︎ Capricornus</option>
+                                <option value="aquarius">♒︎ Aquarius</option>
+                                <option value="pisces">♓︎ Pisces</option>
+                              </select></td></tr></tbody></table>
+<button class="btn btn-danger" onsubmit="predict()" style="font-size:24px">ทำนาย</button></center>
+</div>
+    <center>
+        <div id="result"><div class="animate__animated animate__fadeIn">
+<font size="4">
+<b><div class="card" id="suna"></div></b><div id="sunb"></div>
+<b><div class="card" id="moona"></div></b><div id="moonb"></div>
+<b><div class="card" id="mercurya"></div></b><div id="mercuryb"></div>
+<b><div class="card" id="venusa"></div></b><div id="venusb"></div>
+<b><div class="card" id="marsa"></div></b><div id="marsb"></div>
+<b><div class="card" id="jupitera"></div></b><div id="jupiterb"></div>
+<b><div class="card" id="saturna"></div></b><div id="saturnb"></div>
+<b><div class="card" id="uranusa"></div></b><div id="uranusb"></div>
+<b><div class="card" id="neptunea"></div></b><div id="neptuneb"></div>
+<b><div class="card" id="plutoa"></div></b><div id="plutob"></div>
+
+<b><div class="card" id="sunas"></div></b><div id="sunbs"></div>
+<b><div class="card" id="moonas"></div></b><div id="moonbs"></div>
+<b><div class="card" id="mercuryas"></div></b><div id="mercurybs"></div>
+<b><div class="card" id="venusas"></div></b><div id="venusbs"></div>
+<b><div class="card" id="marsas"></div></b><div id="marsbs"></div>
+<b><div class="card" id="jupiteras"></div></b><div id="jupiterbs"></div>
+<b><div class="card" id="saturnas"></div></b><div id="saturnbs"></div>
+<b><div class="card" id="uranusas"></div></b><div id="uranusbs"></div>
+<b><div class="card" id="neptuneas"></div></b><div id="neptunebs"></div>
+<b><div class="card" id="plutoas"></div></b><div id="plutobs"></div>
+
+<b><div class="card" id="sunc"></div></b><div id="sund"></div>
+<b><div class="card" id="moonc"></div></b><div id="moond"></div>
+<b><div class="card" id="mercuryc"></div></b><div id="mercuryd"></div>
+<b><div class="card" id="venusc"></div></b><div id="venusd"></div>
+<b><div class="card" id="marsc"></div></b><div id="marsd"></div>
+<b><div class="card" id="jupiterc"></div></b><div id="jupiterd"></div>
+<b><div class="card" id="saturnc"></div></b><div id="saturnd"></div>
+<b><div class="card" id="uranusc"></div></b><div id="uranusd"></div>
+<b><div class="card" id="neptunec"></div></b><div id="neptuned"></div>
+<b><div class="card" id="plutoc"></div></b><div id="plutod"></div>
+
+
 <br><button class="btn btn-success" style="font-size:20px" onClick="window.location.reload();">กลับหน้าหลัก</button>
-
-</td>
-    
-
-        </tr>
-        </tbody>
-        </table>
-     
-
-
-
 </div>
 </font>
 </center>
     <script>
+        // Make the DIV element draggable:
+dragElement(document.getElementById("mydivabc"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "headerabc").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
  document.getElementById("result").style.display = "none";
 function predict() {
     document.getElementById("outframe").style.display = "none";
     document.getElementById("result").style.display = "block";
+    document.getElementById("mydivabc").style.display = "none";
 
 house_1 = document.getElementById("house_1").value
 house_2 = document.getElementById("house_2").value
@@ -1566,7 +1614,7 @@ if (sun_house === "1"){
     document.getElementById('sund').innerHTML = 'เฉลียวฉลาด มีความสุขเมื่อได้สื่อสาร ไม่อยากได้หน้าหรืออยากเป็นที่หนึ่ง กระตือรือร้นเรียนนู่นเรียนนี่ไปเรื่อยไม่ให้ตกสมัย ลักษณ์มักดูอ่อนเยาว์เข้าสมัย'
 } else if (sun_house === "4"){
     document.getElementById('sunc').innerHTML = '• อาทิตย์อยู่เรือน 4'
-    document.getElementById('sund').innerHTML = ''
+    document.getElementById('sund').innerHTML = 'มีพันธะอยู่กับครอบครัว ทุ่มเทเพื่อบ้านหรือที่ดิน ผูกพันกับคนที่เกิดมาอยู่ตั้งแต่เด็กจนโตไม่ยอมจากไปไหน ขี้อายไม่ชอบแสงสี รักดินแดน รักชาติ ชาตินิยม ชอบประวัติศาสตร์ มักทำงานจนสูงวัย จะไม่ยอมทำตัวไร้ค่าให้ใครมาเลี้ยง ชอบทำงานจิตอาสาอยู่เสมอ'
 } else if (sun_house === "5"){
     document.getElementById('sunc').innerHTML = '• อาทิตย์อยู่เรือน 5'
     document.getElementById('sund').innerHTML = ''
@@ -1603,7 +1651,7 @@ if (moon_house === "1"){
     document.getElementById('moond').innerHTML = 'เรียบง่ายสบายๆ เข้าใจคนอื่น ถ่อมตน พูดจาสนุกสนานตลก ทำให้ไม่น่าเบื่อ ชอบทำงานกับผู้คนหลากหลาย เจ้าชู้พูดหยอดไปเรื่อย'
 } else if (moon_house === "4"){
     document.getElementById('moonc').innerHTML = '• จันทร์อยู่เรือน 4'
-    document.getElementById('moond').innerHTML = ''
+    document.getElementById('moond').innerHTML = 'บ้านและครอบครัวสำคัญต่อชีวิตสูงสุดจนส่งผลต่อการเติบโตเป็นผู้ใหญ่ มีเซนส์สังหรที่แม่นยำในการนำทางชีวิต ยึดมั่นในค่านิยมเก่าๆ ถวิลหาอดีต กลัวการเปิดเผยความรู้สึก เมื่อรักใครพร้อมอุทิศตนถวาย'
 } else if (moon_house === "5"){
     document.getElementById('moonc').innerHTML = '• จันทร์อยู่เรือน 5'
     document.getElementById('moond').innerHTML = ''
@@ -1640,7 +1688,7 @@ if (mercury_house === "1"){
     document.getElementById('mercuryd').innerHTML = 'ฉลาดมาก เป็นนักแก้ปัญหา มีพรสวรรค์การเขียน ถนัดงานสื่อสารทุกประเภท ชอบความเร็ว ความคิดอ่อนเยาว์ ทันสมัย สนใจสิ่งรอบตัวต่างๆจึงมักไม่มีสมาธิจดจ่อ จะบูรณาการศาสตร์ต่างๆมารวมได้เอง'
 } else if (mercury_house === "4"){
     document.getElementById('mercuryc').innerHTML = '• พุธอยู่เรือน 4'
-    document.getElementById('mercuryd').innerHTML = ''
+    document.getElementById('mercuryd').innerHTML = 'มักไม่ปักหลักอยู่ที่ใดนาน มักโตที่อื่นไกลบ้าน มีจุดยืนทางความคิดตัวเองไม่ตามใครแต่จะเคารพความเห็นผู้อื่น ไม่ตัดสินล้ำเส้น สนใจด้านประวัติศาสตร์ โบราณคดี มานุษยวิทยา'
 } else if (mercury_house === "5"){
     document.getElementById('mercuryc').innerHTML = '• พุธอยู่เรือน 5'
     document.getElementById('mercuryd').innerHTML = ''
@@ -1677,7 +1725,7 @@ if (venus_house === "1"){
     document.getElementById('venusd').innerHTML = 'เกี่ยวข้องกับความงามด้านวรรณกรรม รักอิสระไม่ชอบผูกติด'
 } else if (venus_house === "4"){
     document.getElementById('venusc').innerHTML = '• ศุกร์อยู่เรือน 4'
-    document.getElementById('venusd').innerHTML = ''
+    document.getElementById('venusd').innerHTML = 'บ้านคือวิมาน ภูมิใจในบ้านของตัวเอง รักครอบครัว ชอบจัดสวน ชอบให้เพื่อนๆมาแวะเวียน มีใครต้องแยกจากจะเศร้าหงอย สภาพแวดล้อมในบ้านมีอิทธิพลต่อชีวิต หากไม่ดีแล้วฟันฝ่าไปได้จะเติบโตขึ้นอย่างแข็งแกร่ง'
 } else if (venus_house === "5"){
     document.getElementById('venusc').innerHTML = '• ศุกร์อยู่เรือน 5'
     document.getElementById('venusd').innerHTML = ''
@@ -1714,7 +1762,7 @@ if (mars_house === "1"){
     document.getElementById('marsd').innerHTML = 'เหมาะสำหรับนักกีฬาที่ต้องแข่งความเร็วทุกประเภท มีสัญชาตญาณปกป้องแบบพี่คุ้มครองน้องสูง พูดจาโผงผาง ชอบแทรก ถ้าเป็นนักขับรถหรือบังคับเครื่องบินจะเก่งมาก ถ้าเป็นทนายเป็นฝ่ายค้านจะรุ่งที่สุด'
 } else if (mars_house === "4"){
     document.getElementById('marsc').innerHTML = '• อังคารอยู่เรือน 4'
-    document.getElementById('marsd').innerHTML = ''
+    document.getElementById('marsd').innerHTML = 'แม่มักเข้ามาเป็นใหญ่ในชีวิต วัยเด็กมักไม่มีความสุขชีวิตไร้ระเบียบ อันตรายเกิดขึ้นจะมีความรุนแรงขึ้นในบ้าน หรือถูกเลี้ยงดูมาด้วยความรุนแรง ผ่านพ้นได้จะเกิดแต่ความสำเร็จ มีชีวิตอยู่ที่ยืนยาวยันแก่เฒ่า '
 } else if (mars_house === "5"){
     document.getElementById('marsc').innerHTML = '• อังคารอยู่เรือน 5'
     document.getElementById('marsd').innerHTML = ''
@@ -1751,7 +1799,7 @@ if (jupiter_house === "1"){
     document.getElementById('jupiterd').innerHTML = 'ตำแหน่งทองสำหรับอาชีพสื่อสาร มีอำนาจในการจูงใจ มักมีพี่น้องเพื่อนบ้านอบอุ่นคอยดูแล ไม่ชอบการหยุดนิ่งอยู่กับที่ รักการเรียนรู้ ชอบแบ่งปันความรู้แก่คนรอบข้าง'
 } else if (jupiter_house === "4"){
     document.getElementById('jupiterc').innerHTML = '• พฤหัสอยู่เรือน 4'
-    document.getElementById('jupiterd').innerHTML = ''
+    document.getElementById('jupiterd').innerHTML = 'มาจากครอบครัวอบอุ่น ครอบครัวมีความสุขมาก มักได้มรดกจากทางบ้าน เป็นคนไม่สุรุ่ยสุร่าย เก็บออมเงินไว้ให้ลูกหลานของพวกเขาต่อ เป็นตัวแทนของพ่อผู้แสนอบอุ่นใจดี'
 } else if (jupiter_house === "5"){
     document.getElementById('jupiterc').innerHTML = '• พฤหัสอยู่เรือน 5'
     document.getElementById('jupiterd').innerHTML = ''
@@ -1788,7 +1836,7 @@ if (saturn_house === "1"){
     document.getElementById('saturnd').innerHTML = 'จริงจัง เป็นเหตุเป็นผล เหมาะแก่งานสายคำนวณ เก็บความในใจมากไม่ได้ระบาย มักมีปัญหาพี่น้องเข้ากันได้ลำบาก '
 } else if (saturn_house === "4"){
     document.getElementById('saturnc').innerHTML = '• เสาร์อยู่เรือน 4'
-    document.getElementById('saturnd').innerHTML = ''
+    document.getElementById('saturnd').innerHTML = 'เติบโตมากับความเข้มงวด พ่อแม่จะห่างเหินหรือเย็นชาด้วย ขาดความรักความอ่อนโยนในวันเด็กไม่มีอิสระ จะเป็นผู้ใหญ่เกินตัว โตมาจะใฝ่หาบ้านสรา้งครอบครัวชดเชยวัยเด็กที่ขาดหาย แต่จะพบกับความเงียบเหงาเหมือนเดิม ในแง่กรรมมักเป็นคนมีปมกับพ่อ ข้อดีคือจะมีชะตาอายุที่ยืนยาว'
 } else if (saturn_house === "5"){
     document.getElementById('saturnc').innerHTML = '• เสาร์อยู่เรือน 5'
     document.getElementById('saturnd').innerHTML = ''
@@ -1825,7 +1873,7 @@ if (uranus_house === "1"){
     document.getElementById('uranusd').innerHTML = 'มีญาณสังหรณ์แรง มักได้ข้อมูลดีๆแวบผ่านเข้าหัว เป็นเด็กอัจฉริยะห้ามไปกำหนดกรอบบังคับกฎระเบียบโบราณเด็ดขาดจะทำลายพรสวรรค์นั้น มักมีพี่น้องหรือเพื่อนเป็นคนสำคัญในชีวิต'
 } else if (uranus_house === "4"){
     document.getElementById('uranusc').innerHTML = '• ยูเรนัสอยู่เรือน 4'
-    document.getElementById('uranusd').innerHTML = ''
+    document.getElementById('uranusd').innerHTML = 'ชีวิตวัยเด็กมีบาดแผลต้องพบการเปลี่ยนแปลงกะทันหันในบ้านจะส่งผลกระทบต่อจิตใจจนถึงตอนโต แต่แผลพวกนี้ส่งผลดีต่อดวงวิญญาณ จะช่วยให้ก้าวหน้าเติบโตทางจิตวิญญาณ สู่ความสำเร็จในอนาคต จะเป็นเด็กดื้อ พ่อแม่ควบคุมไม่ได้ อ่อนไหวตะคำวิจารณ์มาก มักเปลี่ยนถิ่นอาศัยอยู่บ่อยครั้ง เป็นคนแปลกแยกเข้ากับคนยาก ถ้ามีบ้านแล้วจะเต็มไปด้วยอุปกรณ์เทคโนโลยีเป็นที่รวมของคนแปลกๆ ทำพิธีกรรมแปลกๆ'
 } else if (uranus_house === "5"){
     document.getElementById('uranusc').innerHTML = '• ยูเรนัสอยู่เรือน 5'
     document.getElementById('uranusd').innerHTML = ''
@@ -1862,7 +1910,7 @@ if (neptune_house === "1"){
     document.getElementById('neptuned').innerHTML = 'มีจินตนาการสูง มโนภาพชัดเจน เป็นเด็กไม่รู้จักโต เข้าได้กับเด็ก ไม่จริงจังกับอะไรสักเรื่อง แต่จะเป็นเพื่อนที่ดีมากสนุกสนานเมื่ออยู่ใกล้ รักการเดินทางโดยเฉพาะเกาะที่ติดน้ำ'
 } else if (neptune_house === "4"){
     document.getElementById('neptunec').innerHTML = '• เนปจูนอยู่เรือน 4'
-    document.getElementById('neptuned').innerHTML = ''
+    document.getElementById('neptuned').innerHTML = 'วัยเด็กมีปัญหาวุ่นวาย พ่อแม่ไม่ได้อบรมวินัยให้ ต้องไปอาศัยบ้านคนอื่นอยู่ เข้ากับพ่อแม่ไม่ได้ รักธรรมชาติ มักมีบ้านอยู่ติดริมน้ำและต้นไม้'
 } else if (neptune_house === "5"){
     document.getElementById('neptunec').innerHTML = '• เนปจูนอยู่เรือน 5'
     document.getElementById('neptuned').innerHTML = ''
@@ -1899,7 +1947,7 @@ if (pluto_house === "1"){
     document.getElementById('plutod').innerHTML = 'มีความจำที่แม่นยำมากละเอียดทุกเม็ดเรื่องข้อมูลข่าวสาร ตอนเด็กจะถามจี้แต่ทำไมๆเพื่อหาคำตอบกับทุกเรื่อง เหมาะกับงานสายสืบความลับ ยึดความเห็นตัวเองไม่ยอมเปลี่ยนง่ายๆ ต้องมีข้อมาหักล้างที่เหมาะสมเท่านั้นถึงจะยอม มักต้องเดินทางแบบลับๆ มีเรื่องแปลกๆให้เดินทาง มักมีปัญหากับพี่น้องทะเลาะกันมีปัญหาความรุนแรง'
 } else if (pluto_house === "4"){
     document.getElementById('plutoc').innerHTML = '• พลูโตอยู่เรือน 4'
-    document.getElementById('plutod').innerHTML = ''
+    document.getElementById('plutod').innerHTML = 'ชีวิตวัยเด็กถึงวัยรุ่นมักจะมีปัญหา ความสุขถูกทำลาย คนในบ้านตายจาก จะเป็นเด็กบ้านแตกสาแหรกขาด ถูกเลี้ยงดูใช้อำนาจบังคับ อาจไม่ได้เรียนหนังสือเหมือนเด็กทั่วไป อาจถูกส่งไปสถานพินิจ จะมีญาณสังหรณ์แรงกล้าใช้มาเผชิญหน้ากับเคราะห์ที่เจอะเจอ จะเป็นคนที่คิดอะไรได้ลึกซึ้งตั้งแต่เด็ก จะกลายเป็นพรอันยิ่งใหญ่ที่ปลอมตัวมาเพื่อเรียนรู้บทเรียนชีวิตที่ล้ำค่า'
 } else if (pluto_house === "5"){
     document.getElementById('plutoc').innerHTML = '• พลูโตอยู่เรือน 5'
     document.getElementById('plutod').innerHTML = ''
