@@ -44,7 +44,7 @@
           <tr>
             <th><h4><div title="ดาวอาทิตย์">☉ Sun</div></h4></th>
             <td><select id="sun" class="sun" style="font-size:20px;">
-                <option style="display:none;"></option>
+              <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -90,7 +90,7 @@
                       </select></td>
             <td><h4><div title="ดาวพฤหัส">♃ Jupiter</div></h4></td>
             <td><select id="jupiter" class="jupiter" style="font-size:20px;">
-              <option style="display:none;"></option>
+              <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -137,7 +137,7 @@
                 </tr><tr>
             <th><h4><div title="ดาวจันทร์">☾ Moon</div></h4></th>
             <td><select id="moon" class="moon" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -183,7 +183,7 @@
                       </select></td>
             <td><h4><div title="ดาวเสาร์ ">♄ Saturn</div></h4></td>
             <td><select id="saturn" class="saturn" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -229,7 +229,7 @@
                       </select></td></tr><tr>
             <th><h5><div title="ดาวพุธ"> Mercury ☿</div></h5></th>
             <td><select id="mercury" class="mercury" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -275,7 +275,7 @@
                       </select></td>
             <td><h5><div title="ดาวยูเรนัส">Uranus ♅</div></h5></td>
             <td><select id="uranus" class="uranus" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -322,7 +322,7 @@
                 </tr><tr>
             <th scope="row"><h5><div title="ดาวศุกร์">Venus ♀</div></h5></th>
             <td><select id="venus" class="venus" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -368,7 +368,7 @@
                       </select></td>
             <td><h4><div title="ดาวเนปจูน">♆ Neptune</div></h4></td>
             <td><select id="neptune" class="neptune" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -414,7 +414,7 @@
                       </select></td></tr><tr>
             <th scope="row"><h3><div title="ดาวอังคาร">♂ Mars</div></h3></th>
             <td><select id="mars" class="mars" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -460,7 +460,7 @@
                       </select></td>
             <td><h4><div title="ดาวพลูโต">♇ Pluto</div></h4></td>
             <td><select id="pluto" class="pluto" style="font-size:20px;">
-              <option style="display:none;"></option>
+                <option value="-">-</option>
               <option value="aries">♈︎ Aries</option>
               <option value="taurus">♉︎ Taurus</option>
               <option value="gemini">♊︎ Gemini</option>
@@ -725,6 +725,17 @@
     <center>
         <div id="result"><div class="animate__animated animate__fadeIn">
 <font size="4">
+    <b><div class="card" id="nonsuna"></div></b><div id="nonsunb"></div>
+<b><div class="card" id="nonmoona"></div></b><div id="nonmoonb"></div>
+<b><div class="card" id="nonmercurya"></div></b><div id="nonmercuryb"></div>
+<b><div class="card" id="nonvenusa"></div></b><div id="nonvenusb"></div>
+<b><div class="card" id="nonmarsa"></div></b><div id="nonmarsb"></div>
+<b><div class="card" id="nonjupitera"></div></b><div id="nonjupiterb"></div>
+<b><div class="card" id="nonsaturna"></div></b><div id="nonsaturnb"></div>
+<b><div class="card" id="nonuranusa"></div></b><div id="nonuranusb"></div>
+<b><div class="card" id="nonneptunea"></div></b><div id="nonneptuneb"></div>
+<b><div class="card" id="nonplutoa"></div></b><div id="nonplutob"></div>
+
 <b><div class="card" id="suna"></div></b><div id="sunb"></div>
 <b><div class="card" id="moona"></div></b><div id="moonb"></div>
 <b><div class="card" id="mercurya"></div></b><div id="mercuryb"></div>
@@ -861,7 +872,76 @@ uranus_house = document.getElementById("uranus_house").value
 neptune_house = document.getElementById("neptune_house").value
 pluto_house = document.getElementById("pluto_house").value
 
-
+if (sun === "-"){
+    document.getElementById('nonsuna').innerHTML = '• ดาวอาทิตย์โดด'
+    document.getElementById('nonsunb').innerHTML = 'หยิ่งในอัตตา ตัวข้ามาก่อน ทะเยอทะยาน หวังก้าวหน้าสู่จุดสูงสุด จากสถิติมักเป็นคนมีชื่อเสียง'
+} else {
+    document.getElementById("nonsuna").style.display = "none";
+    document.getElementById("nonsunb").style.display = "none";
+}
+ if (moon === "-"){
+    document.getElementById('nonmoona').innerHTML = '• ดาวจันทร์โดด'
+    document.getElementById('nonmoonb').innerHTML = 'ชะตาไม่สมดุล ให้เจ้าของชะตาเรียนรู้วิธีปรับตัวให้จิตเป็นเมตตา'
+} else {
+    document.getElementById("nonmoona").style.display = "none";
+    document.getElementById("nonmoonb").style.display = "none";
+}
+ if (mercury === "-"){
+    document.getElementById('nonmercurya').innerHTML = '• ดาวพุธโดด'
+    document.getElementById('nonmercuryb').innerHTML = 'มีเชาวน์ปัญญามาก อารมณ์ขัน เข้าหาผู้คนได้เก่ง ปรับตัวง่าย'
+} else {
+    document.getElementById("nonmercurya").style.display = "none";
+    document.getElementById("nonmercuryb").style.display = "none";
+}
+if (venus === "-"){
+    document.getElementById('nonvenusa').innerHTML = '• ดาวศุกร์โดด'
+    document.getElementById('nonvenusb').innerHTML = 'นิสัยสบายๆ ไม่เอาอ่าว น่ารักจนใครๆพากันเข้าหา เป็นวิญญาณเก่าแก่เกิดมาหลายภพชาติเกิดมาในชาตินี้เพื่อมอบความรักแก่ผู้อื่น'
+} else {
+    document.getElementById("nonvenusa").style.display = "none";
+    document.getElementById("nonvenusb").style.display = "none";
+}
+if (mars === "-"){
+    document.getElementById('nonmarsa').innerHTML = '• ดาวอังคารโดด'
+    document.getElementById('nonmarsb').innerHTML = 'มักเก่งกีฬา กล้าหาญสู้ศึก นายพลกองทัพวีรบุรุษมักมีดาวตำแหน่งนี้'
+} else {
+    document.getElementById("nonmarsa").style.display = "none";
+    document.getElementById("nonmarsb").style.display = "none";
+}
+if (jupiter === "-"){
+    document.getElementById('nonjupitera').innerHTML = '• ดาวพฤหัสโดด'
+    document.getElementById('nonjupiterb').innerHTML = 'มีอารมณ์ขันมองโลกแง่บวก ดวงดี มักเห็นโอกาสในวิกฤตเห็นความโชคดีในโชคร้าย'
+} else {
+    document.getElementById("nonjupitera").style.display = "none";
+    document.getElementById("nonjupiterb").style.display = "none";
+}
+if (saturn === "-"){
+    document.getElementById('nonsaturna').innerHTML = '• ดาวเสาร์โดด'
+    document.getElementById('nonsaturnb').innerHTML = 'จริงจัง รับผิดชอบ ไม่มีออร่าจับ แต่เป็นคนที่ไว้ใจได้ ฝากผีฝากไข้ได้'
+} else {
+    document.getElementById("nonsaturna").style.display = "none";
+    document.getElementById("nonsaturnb").style.display = "none";
+}
+if (uranus === "-"){
+    document.getElementById('nonuranusa').innerHTML = '• ดาวยูเรนัสกระโดด'
+    document.getElementById('nonuranusb').innerHTML = 'มีเอกลักษณ์ไม่เหมือนใคร ชอบแหกกฎ มีพรสวรรค์ด้านการประดิษฐ์คิดค้น'
+} else {
+    document.getElementById("nonuranusa").style.display = "none";
+    document.getElementById("nonuranusb").style.display = "none";
+}
+if (neptune === "-"){
+    document.getElementById('nonneptunea').innerHTML = '• ดาวเนปจูนโดด'
+    document.getElementById('nonneptuneb').innerHTML = 'พลังดีงามญาณสังหรณ์ส่องประกายเต็มที่ จะเข้าไปเกี่ยวข้องกับศาสนาอย่างเข้มข้น'
+} else {
+    document.getElementById("nonneptunea").style.display = "none";
+    document.getElementById("nonneptuneb").style.display = "none";
+}
+if (pluto === "-"){
+    document.getElementById('nonplutoa').innerHTML = '• ดาวพลูโตโดด'
+    document.getElementById('nonplutob').innerHTML = 'พลังชีวิตเข้มข้น มักมีชื่อเสียงหรือชื่อเสีย อยู่ที่ว่าจะโด่งดังทางไหน สิ่งที่ทำมักได้รับการจดจำแม้เสียชีวิตไปแล้ว'
+} else {
+    document.getElementById("nonplutoa").style.display = "none";
+    document.getElementById("nonplutob").style.display = "none";
+}
 
 if (sun === "aries"){
     document.getElementById('suna').innerHTML = '• อาทิตย์อยู่เมษ'
@@ -1628,7 +1708,7 @@ if (sun_house === "1"){
     document.getElementById('sund').innerHTML = 'เป็นผู้นำสูง ดวงเป็นผู้นำตัวแทนฝูงชน'
 } else if (sun_house === "8"){
     document.getElementById('sunc').innerHTML = '• อาทิตย์อยู่เรือน 8'
-    document.getElementById('sund').innerHTML = ''
+    document.getElementById('sund').innerHTML = 'ศักยภาพสูง พลังญาณสังหรณ์จะช่วยบอกว่าทำอะไรแล้วจะได้ผล เป็นเจ้าแห่งการบงการชักใย มีจิตวิทยาสูงจูงใจคน จะอยู่โดดเดี่ยวแต่เล็ก จนนิสัยมองไม่เห็นความรู้สึกผู้อื่น มักดึงดูดความรักที่เป็นของคนอื่นอยู่แล้ว ดวงผูกมัดกับการสูญเสียด้านความตายการแยกจาก '
 } else if (sun_house === "9"){
     document.getElementById('sunc').innerHTML = '• อาทิตย์อยู่เรือน 9'
     document.getElementById('sund').innerHTML = ''
@@ -1665,7 +1745,7 @@ if (moon_house === "1"){
     document.getElementById('moond').innerHTML = 'สามารถจับเทรนด์ได้ว่าสาธารณชนกำลังชอบหรือไม่ชอบอะไรอยู่ ทำสายงานเกี่ยวข้องกับสาธารณะจะรุ่งเรือง จะได้แต่งงานกับคนที่เหมือนกับพ่อหรือเหมือนกับแม่'
 } else if (moon_house === "8"){
     document.getElementById('moonc').innerHTML = '• จันทร์อยู่เรือน 8'
-    document.getElementById('moond').innerHTML = ''
+    document.getElementById('moond').innerHTML = 'อารมณ์เข้มข้นทรงพลังมาก โหยหาการสัมผัสทั้งทางกามารมณ์และจิตวิญญาณ แรงขับทางเพศสูง จะแวดล้อมด้วยเพศตรงข้าม มีใจเมตตาต่อสรรพสัตว์ทั้งหลาย ทั้งชีวิตจะวนเวียนกับความรัก การจาก และการตายของหลายๆชีวิต'
 } else if (moon_house === "9"){
     document.getElementById('moonc').innerHTML = '• จันทร์อยู่เรือน 9'
     document.getElementById('moond').innerHTML = ''
@@ -1702,7 +1782,7 @@ if (mercury_house === "1"){
     document.getElementById('mercuryd').innerHTML = 'มักกังวลว่าคนอื่นจะคิดยังไงกับตัวเองยังไง มีกูรูที่นับถือมากเกินไปหลายอาจารย์ ไม่ชอบอยู่กับที่ย้ายที่อยู่หรือเปลี่ยนชื่อไปเรื่อย จะไม่ซื่อสัตย์ต่อคู่ครองเพราะเปลี่ยนใจเปลี่ยนแปลงตัวเองง่าย'
 } else if (mercury_house === "8"){
     document.getElementById('mercuryc').innerHTML = '• พุธอยู่เรือน 8'
-    document.getElementById('mercuryd').innerHTML = ''
+    document.getElementById('mercuryd').innerHTML = 'จริงใจมากทางความคิด ไม่ตื้นเขิน ชอบเก็บความคิดไม่พูดให้ใครล่วงรู้ สนใจเรื่องความตายและปริศนาลึกลับ มีพรสวรรค์ดึงดูดเงินเข้าหาตัว จะต้องรับมือกับความตายหรือการเสี่ยงชีวิต การตายจะไม่ธรรมดาพิเศษกว่าคนอื่น'
 } else if (mercury_house === "9"){
     document.getElementById('mercuryc').innerHTML = '• พุธอยู่เรือน 9'
     document.getElementById('mercuryd').innerHTML = ''
@@ -1739,7 +1819,7 @@ if (venus_house === "1"){
     document.getElementById('venusd').innerHTML = 'มักแต่งงานเร็ว ขาดคู่ชีวิตไม่ได้ มีพลังเสน่ห์ดึงดูดกามารมณ์มาก'
 } else if (venus_house === "8"){
     document.getElementById('venusc').innerHTML = '• ศุกร์อยู่เรือน 8'
-    document.getElementById('venusd').innerHTML = ''
+    document.getElementById('venusd').innerHTML = 'อารมณ์เข้มข้น พลังกามารมณ์รุนแรง เสน่ห์ดึงดูดทรงพลัง จะได้มรดกจากคู่(สินสอดหรือค่าหย่าร้าง) ผู้หญิงจะร่ำรวยด้วยเงินของผู้ชาย'
 } else if (venus_house === "9"){
     document.getElementById('venusc').innerHTML = '• ศุกร์อยู่เรือน 9'
     document.getElementById('venusd').innerHTML = ''
@@ -1776,7 +1856,7 @@ if (mars_house === "1"){
     document.getElementById('marsd').innerHTML = 'พลังความมั่นใจ กระตือรือร้นสูง เป็นคนขี้เถียง ขี้น้อยใจ  มักดึงดูดคู่ที่อารมณ์ที่ร้อนรุนแรงก้าวร้าว '
 } else if (mars_house === "8"){
     document.getElementById('marsc').innerHTML = '• อังคารอยู่เรือน 8'
-    document.getElementById('marsd').innerHTML = ''
+    document.getElementById('marsd').innerHTML = 'มีพลังเข้มข้นรุนแรง เข้าถึงจิตวิทยาผู้คน เจาะลึกเรื่องราวต่างๆ เก่งเรื่องบริหารการเงินผู้อื่น ถ้าดาวเสียมีแนวโน้มด้านอาชญากรรม หวาดกลัวความผูกผัน การหนีจากความสัมพันธ์จะทำให้เกิดการเปลี่ยนชีวิตครั้งใหญ่  พลังกามารมณ์รุนแรงถึงขั้นสุดต้องหาทางระบายออกไม่อย่างนั้นอาจเจ็บป่วยทางกายและทางจิตได้'
 } else if (mars_house === "9"){
     document.getElementById('marsc').innerHTML = '• อังคารอยู่เรือน 9'
     document.getElementById('marsd').innerHTML = ''
@@ -1813,7 +1893,7 @@ if (jupiter_house === "1"){
     document.getElementById('jupiterd').innerHTML = 'โรแมนติก ดูแลคู่ดีมาก มีเสน่ห์ต่อสาธารณชน รักษาสัจจะมาก ซื่อสัตย์รักเดียวใจเดียว'
 } else if (jupiter_house === "8"){
     document.getElementById('jupiterc').innerHTML = '• พฤหัสอยู่เรือน 8'
-    document.getElementById('jupiterd').innerHTML = ''
+    document.getElementById('jupiterd').innerHTML = 'มีพรสวรรค์ด้านการเงินการลงทุนหาตัวจับยาก มักได้มรดกจำนวนมาก ยึดความคิดส่วนตัวแม้สังคมจะต่อต้าน รู้ว่าอนาคตโลกจะไปแนวทางนั้น เป็นคนเข้าใจคนอื่น เชื่อในพระเจ้าโดยธรรมชาติ มีความต้องการทางเพศสูงต้องการคู่รักที่ต้องการสนองความต้องการนี้'
 } else if (jupiter_house === "9"){
     document.getElementById('jupiterc').innerHTML = '• พฤหัสอยู่เรือน 9'
     document.getElementById('jupiterd').innerHTML = ''
@@ -1850,7 +1930,7 @@ if (saturn_house === "1"){
     document.getElementById('saturnd').innerHTML = 'ชาตินี้จะหาคู่ไม่ได้ เคร่งครัดในระเบียบ รับผิดชอบสูง สำนึกในหน้าที่สูงทำให้สูญเสียสิ่งปรารถนา มีความอดทนทางกายเป็นพิเศษ อดทนได้มากกว่าคนอื่น หากได้แต่งงานคู่จะป่วยไข้หรือมีเหตุต้องแยกจากแดนไกลแต่จะไม่ยอมเลิกรา'
 } else if (saturn_house === "8"){
     document.getElementById('saturnc').innerHTML = '• เสาร์อยู่เรือน 8'
-    document.getElementById('saturnd').innerHTML = ''
+    document.getElementById('saturnd').innerHTML = 'มีพลังสมาธิที่แน่วแน่ สนใจในเรื่องความตายโลกหลังความตาย ถ้าฝึกฝนญาณจะแรงกล้ามาก เคยพบประสบการณ์เฉียดตายจะเปลี่ยนชีวิตจากหน้ามือเป็นหลังมือ มีกระแสความเศร้าแต่จะพลิกเปลี่ยนเป็นเรื่องอารมณ์ขันได้ มีเสน่ห์และความเศร้าอยู่ในตัว จะมีคนอายุมากดึงดูดเข้ามาช่วยเหลือ มีความสามรถจัดการเงินของผู้อื่นได้ดี มีความรับผิดชอบ รอบคอบ มีลางสังหรณ์ ดื้อ มักไม่มองเห็นความผิดตัวเอง ความตายเจ้าชะตามักไม่ได้เกิดขึ้นกะทันหัน ยืดเยื้อยาวนานมีเวลาให้ทำใจ'
 } else if (saturn_house === "9"){
     document.getElementById('saturnc').innerHTML = '• เสาร์อยู่เรือน 9'
     document.getElementById('saturnd').innerHTML = ''
@@ -1887,7 +1967,7 @@ if (uranus_house === "1"){
     document.getElementById('uranusd').innerHTML = 'ดวงหย่าร้าง รักอิสระสุดขั้ว ไม่ชอบให้ใครมายุ่งกับชีวิตส่วนตัว ชอบความตื่นเต้น เป็นกันเองเข้าใจคนรอบด้านยกเว้นคนใกล้ตัว'
 } else if (uranus_house === "8"){
     document.getElementById('uranusc').innerHTML = '• ยูเรนัสอยู่เรือน 8'
-    document.getElementById('uranusd').innerHTML = ''
+    document.getElementById('uranusd').innerHTML = 'จะนำมรดกทรัพย์สินมหาศาลยกให้การกุศลช่วยเหลือผู้ประสบเคราะห์กรรม จะไม่สนใจเรื่องเงินการลงทุนแบบตามกระแส เชื่อมั่นในเซนส์ตัวเอง วัยเด็กมักโดดเดี่ยว ดื้อเงียบ โดดเดี่ยวและขี้อาย นานๆทีทนไม่ไหวถึงจะกล้าทำอะไรห่ามๆ มีความเป็นฮีโร่ตามธรรมชาติมักจะแสดงออกยามมีวิกฤต การตายของเจ้าชะตามักจะตายกระทันหัน'
 } else if (uranus_house === "9"){
     document.getElementById('uranusc').innerHTML = '• ยูเรนัสอยู่เรือน 9'
     document.getElementById('uranusd').innerHTML = ''
@@ -1924,7 +2004,7 @@ if (neptune_house === "1"){
     document.getElementById('neptuned').innerHTML = 'เป็นคนไม่รับผิดชอบภาระในชีวิตจะให้คู่ครองแบกรับ มักชอบทำตัวเองเป็นฮีโร่แล้วก็จะล้มเหลวทุกเรื่อง สามารถเป็นแรงบันดาลใจให้ผู้อื่นได้ดีมาก แต่ชีวิตจริงไม่สามารถทำได้'
 } else if (neptune_house === "8"){
     document.getElementById('neptunec').innerHTML = '• เนปจูนอยู่เรือน 8'
-    document.getElementById('neptuned').innerHTML = ''
+    document.getElementById('neptuned').innerHTML = 'มีพลังญาณทิพย์สูงมาก สามารถสื่อสารกับคนตายได้ มีฝันสังหรณ์ จะได้รับข้อความสำคัญผ่านทางความฝัน มีญาณสังหรณ์เกี่ยวกับการเงินการลงทุนเหมือนผีมาบอกให้ไดเโชค จะพบความตายก่อนวัยอันควรของคนที่เจ้าชะตารักและผูกพัน จะต้องเสียสละสิ่งที่ยิ่งใหญ่มากเพื่อเป้าหมายอะไรบางอย่าง'
 } else if (neptune_house === "9"){
     document.getElementById('neptunec').innerHTML = '• เนปจูนอยู่เรือน 9'
     document.getElementById('neptuned').innerHTML = ''
@@ -1961,7 +2041,7 @@ if (pluto_house === "1"){
     document.getElementById('plutod').innerHTML = 'จะมีปัญหาเรื่องคู่เพราะให้เวลากับงาน จะมีคู่ที่อ่อนแอกว่าเพราะจะครอบงำได้ง่าย'
 } else if (pluto_house === "8"){
     document.getElementById('plutoc').innerHTML = '• พลูโตอยู่เรือน 8'
-    document.getElementById('plutod').innerHTML = ''
+    document.getElementById('plutod').innerHTML = 'มีพลังญาณทิพย์แรงกล้ามาก มีจิตวิทยาสูงรู้ว่าใครคิดอย่างไร-จะทำอะไรต่อไป สามารถบงการผู้อื่นชักใยได้ตามต้องการ จะมีพลังพลิกฟื้นจากวิกฤตได้ดี บริหารอำนาจบริหารสถานการณ์ได้ดี'
 } else if (pluto_house === "9"){
     document.getElementById('plutoc').innerHTML = '• พลูโตอยู่เรือน 9'
     document.getElementById('plutod').innerHTML = ''
