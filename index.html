@@ -421,7 +421,6 @@
                             <option value="12">12</option>
                                 </select></td>
                 </tr></tbody></table>
-(---ส่วนนี้กำลังอัพเกรดอยู่---)
 <h5>< ตำแหน่งดาวทำมุม ></h5>
                 <table>
                     <tbody>
@@ -1030,7 +1029,28 @@
                                                                 </select></td>
                     </tr>
                     </tbody>
-                    </table>
+                    </table><hr>
+                    <h5>[ รูปแบบดวงชะตา ]</h5>
+         <font size="4.8">
+            <table>
+                <tbody>
+                <tr>
+                <td><input type="checkbox" id="grand_trine" name="grand_trine" value="grand trine"> <b>Grand Trine</b</td>
+                <td><input type="checkbox" id="kite" name="grand_trine" value="kite"> kite</td>
+                <td><input type="checkbox" id="grand_cross" name="grand_cross" value="grand cross"> <b>Grand Cross</b</td>
+                <td><input type="checkbox" id="t_square" name="t_square" value="t square"> T-Square</td>
+                <td><input type="checkbox" id="rectangle" name="rectangle" value="rectangle"> <b>Rectangle</b</td>
+                <td><input type="checkbox" id="seesaw" name="seesaw" value="seesaw"> Seesaw</td>
+                <td><input type="checkbox" id="yod" name="seesaw" value="yod"> <b>Yod</b></td>
+                <td><input type="checkbox" id="locomotive" name="locomotive" value="locomotive"> Locomotive</td>
+                <td><input type="checkbox" id="bucket" name="bucket" value="bucket"> <b>Bucket</b> </td>
+                <td><input type="checkbox" id="bundle" name="bundle" value="bundle"> Bundle</td>
+                <td><input type="checkbox" id="splay" name="splay" value="splay"> <b>Splay</b> </td>
+                <td><input type="checkbox" id="splash" name="splash" value="splash"> Splash</td>
+                </tr>
+                </tbody>
+                </table>               </font>
+
            <br>
                               <div id="mydivabc">
                                 <div id="mydivheaderabc"><b>⤩</b> ตำแหน่งดาวตอนนี้
@@ -1067,8 +1087,6 @@
 <b><div class="card" id="plutoa"></div></b><div id="plutob"></div>
 <b><div class="card" id="truenodea"></div></b><div id="truenodeb"></div>
 <b><div class="card" id="northnodea"></div></b><div id="northnodeb"></div>
-
-
 
 <b><div class="card" id="sunc"></div></b><div id="sund"></div>
 <b><div class="card" id="moonc"></div></b><div id="moond"></div>
@@ -1134,6 +1152,18 @@
 <b><div class="card" id="neptune_oppositiona"></div></b><div id="neptune_oppositionb"></div>
 <b><div class="card" id="pluto_oppositiona"></div></b><div id="pluto_oppositionb"></div>
 
+<b><div class="card" id="grand_trinea"></div></b><div id="grand_trineb"></div>
+<b><div class="card" id="kitea"></div></b><div id="kiteb"></div>
+<b><div class="card" id="grand_crossa"></div></b><div id="grand_crossb"></div>
+<b><div class="card" id="t_squarea"></div></b><div id="t_squareb"></div>
+<b><div class="card" id="rectanglea"></div></b><div id="rectangleb"></div>
+<b><div class="card" id="seesawa"></div></b><div id="seesawb"></div>
+<b><div class="card" id="yoda"></div></b><div id="yodb"></div>
+<b><div class="card" id="locomotivea"></div></b><div id="locomotiveb"></div>
+<b><div class="card" id="bucketa"></div></b><div id="bucketb"></div>
+<b><div class="card" id="bundlea"></div></b><div id="bundleb"></div>
+<b><div class="card" id="splaya"></div></b><div id="splayb"></div>
+<b><div class="card" id="splasha"></div></b><div id="splashb"></div>
 
 <br><button class="btn btn-success" style="font-size:20px" onClick="window.location.reload();">กลับหน้าหลัก</button>
 
@@ -1218,55 +1248,68 @@ truenode_house = document.getElementById("truenode_house").value
 
 sun_conjunction = document.getElementById("sun_conjunction").value
 sun_trine = document.getElementById("sun_trine").value
-sun_sextile  = document.getElementById("sun_sextile").value
+sun_sextile = document.getElementById("sun_sextile").value
 sun_square = document.getElementById("sun_square").value
-sun_opposition  = document.getElementById("sun_opposition").value
+sun_opposition = document.getElementById("sun_opposition").value
 moon_conjunction = document.getElementById("moon_conjunction").value
 moon_trine = document.getElementById("moon_trine").value
-moon_sextile  = document.getElementById("moon_sextile").value
+moon_sextile = document.getElementById("moon_sextile").value
 moon_square = document.getElementById("moon_square").value
-moon_opposition  = document.getElementById("moon_opposition").value
+moon_opposition = document.getElementById("moon_opposition").value
 mercury_conjunction = document.getElementById("mercury_conjunction").value
 mercury_trine = document.getElementById("mercury_trine").value
-mercury_sextile  = document.getElementById("mercury_sextile").value
+mercury_sextile = document.getElementById("mercury_sextile").value
 mercury_square = document.getElementById("mercury_square").value
-mercury_opposition  = document.getElementById("mercury_opposition").value
+mercury_opposition = document.getElementById("mercury_opposition").value
 venus_conjunction = document.getElementById("venus_conjunction").value
 venus_trine = document.getElementById("venus_trine").value
-venus_sextile  = document.getElementById("venus_sextile").value
+venus_sextile = document.getElementById("venus_sextile").value
 venus_square = document.getElementById("venus_square").value
-venus_opposition  = document.getElementById("venus_opposition").value
+venus_opposition = document.getElementById("venus_opposition").value
 mars_conjunction = document.getElementById("mars_conjunction").value
 mars_trine = document.getElementById("mars_trine").value
-mars_sextile  = document.getElementById("mars_sextile").value
+mars_sextile = document.getElementById("mars_sextile").value
 mars_square = document.getElementById("mars_square").value
-mars_opposition  = document.getElementById("mars_opposition").value
+mars_opposition = document.getElementById("mars_opposition").value
 jupiter_conjunction = document.getElementById("jupiter_conjunction").value
 jupiter_trine = document.getElementById("jupiter_trine").value
-jupiter_sextile  = document.getElementById("jupiter_sextile").value
+jupiter_sextile = document.getElementById("jupiter_sextile").value
 jupiter_square = document.getElementById("jupiter_square").value
-jupiter_opposition  = document.getElementById("jupiter_opposition").value
+jupiter_opposition = document.getElementById("jupiter_opposition").value
 saturn_conjunction = document.getElementById("saturn_conjunction").value
 saturn_trine = document.getElementById("saturn_trine").value
-saturn_sextile  = document.getElementById("saturn_sextile").value
+saturn_sextile = document.getElementById("saturn_sextile").value
 saturn_square = document.getElementById("saturn_square").value
-saturn_opposition  = document.getElementById("saturn_opposition").value
+saturn_opposition = document.getElementById("saturn_opposition").value
 uranus_conjunction = document.getElementById("uranus_conjunction").value
 uranus_trine = document.getElementById("uranus_trine").value
-uranus_sextile  = document.getElementById("uranus_sextile").value
+uranus_sextile = document.getElementById("uranus_sextile").value
 uranus_square = document.getElementById("uranus_square").value
-uranus_opposition  = document.getElementById("uranus_opposition").value
+uranus_opposition = document.getElementById("uranus_opposition").value
 neptune_conjunction = document.getElementById("neptune_conjunction").value
 neptune_trine = document.getElementById("neptune_trine").value
-neptune_sextile  = document.getElementById("neptune_sextile").value
+neptune_sextile = document.getElementById("neptune_sextile").value
 neptune_square = document.getElementById("neptune_square").value
-neptune_opposition  = document.getElementById("neptune_opposition").value
+neptune_opposition = document.getElementById("neptune_opposition").value
 pluto_conjunction = document.getElementById("pluto_conjunction").value
 pluto_trine = document.getElementById("pluto_trine").value
-pluto_sextile  = document.getElementById("pluto_sextile").value
+pluto_sextile = document.getElementById("pluto_sextile").value
 pluto_square = document.getElementById("pluto_square").value
-pluto_opposition  = document.getElementById("pluto_opposition").value
+pluto_opposition = document.getElementById("pluto_opposition").value
 
+
+grand_trine = document.getElementById("grand_trine")
+kite = document.getElementById("kite")
+grand_cross = document.getElementById("grand_cross")
+t_square = document.getElementById("t_square")
+rectangle = document.getElementById("rectangle")
+seesaw = document.getElementById("seesaw")
+yod = document.getElementById("yod")
+locomotive = document.getElementById("locomotive")
+bucket = document.getElementById("bucket")
+bundle = document.getElementById("bundle")
+splay = document.getElementById("splay")
+splash = document.getElementById("splash")
 
 if (sun === "-"){
     document.getElementById('nonsuna').innerHTML = '• อาทิตย์โดด'
@@ -2207,285 +2250,1417 @@ if (northnode_house === "1" && truenode_house === "7"){
 }
 
 if (sun_conjunction === "moon"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• xxxxxxxx'
-    document.getElementById('sun_conjunctionb').innerHTML = 'zzzzzzzzzzzzzz'
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมจันทร์'
+    document.getElementById('sun_conjunctionb').innerHTML = 'มักทำตามความรู้สึกตัวเอง มีสมดุลทางอารมณ์ดี'
 } else if (sun_conjunction === "mercury"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมพุธ'
+    document.getElementById('sun_conjunctionb').innerHTML = 'มีสติปัญญาสูง คิดอย่างไรก็แสดงออกมาอย่างนั้น'
 } else if (sun_conjunction === "venus"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมศุกร์'
+    document.getElementById('sun_conjunctionb').innerHTML = 'มองโลกในแง่บวก ร่าเริงสดใส มีคนรักมากมาย ตระหนักคุณค่าชีวิตอย่างมาก'
 } else if (sun_conjunction === "mars"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมอังคาร'
+    document.getElementById('sun_conjunctionb').innerHTML = 'บ้าพลัง ชอบเล่นแรงๆ ต้องมีช่องทางการปลดปล่อยพลังงาน'
 } else if (sun_conjunction === "jupiter"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมพฤหัส'
+    document.getElementById('sun_conjunctionb').innerHTML = 'เป็นมุมให้โชคลาภที่สุด เป็นคนใจเอื้อเฟื้อไม่มีสิ้นสุด จะประสบความสำเร็จไม่ต้องเหนื่อย'
 } else if (sun_conjunction === "saturn"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมเสาร์'
+    document.getElementById('sun_conjunctionb').innerHTML = 'มีวินัย รับผิดชอบต่อระเบียบสังคมสูง ขี้อาย ต้องทำงานหนัก บั้นปลายชีวิตจะสุขสบาย'
 } else if (sun_conjunction === "uranus "){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมยูเรนัส'
+    document.getElementById('sun_conjunctionb').innerHTML = 'มุมทรงพลัง ขบถโดยกำเนิด อิสรชนโดยวิญญาณ หัวสร้างสรรค์เข้าข่ายอัจฉริยะ เสน่ห์ดึงดูดใจเพศตรงข้ามเห็นแล้วชอบทันที'
 } else if (sun_conjunction === "neptune"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมเนปจูน'
+    document.getElementById('sun_conjunctionb').innerHTML = 'มีเซนส์สังหรณ์ดี มีเมตตากรุณามาก มีพรสวรรค์ด้านศิลปะสูง'
 } else if (sun_conjunction === "pluto"){
-    document.getElementById('sun_conjunctiona').innerHTML = '• '
-    document.getElementById('sun_conjunctionb').innerHTML = ''
+    document.getElementById('sun_conjunctiona').innerHTML = '• อาทิตย์กุมพลูโต'
+    document.getElementById('sun_conjunctionb').innerHTML = 'จะสามาถเอาชนะสิ่งที่เป็นไปไม่ได้ทั้งปวง มีพลังทางเพศมากดึงดูดมหาชน พลังรุนแรงควบคุมยาก'
 }
-if (moon_conjunction === "sun"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
-} else if (moon_conjunction === "mercury"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+if (moon_conjunction === "mercury"){
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมพุธ'
+    document.getElementById('moon_conjunctionb').innerHTML = 'พูดเก่ง พูดมาก ลางสังหรณ์แรงและแม่น อารมณ์และความคิดขึ้นลงเร็วจนตามไม่ทัน'
 } else if (moon_conjunction === "venus"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมศุกร์'
+    document.getElementById('moon_conjunctionb').innerHTML = 'หัวใจอ่อนโยน แค้นเคืองใครไม่เป็น เมตตากระทั่งศัตรู'
 } else if (moon_conjunction === "mars"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมอังคาร'
+    document.getElementById('moon_conjunctionb').innerHTML = 'ใจร้อน ใช้กำลังตามอารมณ์ อาละวาด'
 } else if (moon_conjunction === "jupiter"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมพฤหัส'
+    document.getElementById('moon_conjunctionb').innerHTML = 'จิตใจเอื้อเฟื้อหาตัวจับยาก'
 } else if (moon_conjunction === "saturn"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมเสาร์'
+    document.getElementById('moon_conjunctionb').innerHTML = 'เครียดไร้อารมณ์ขัน หัวโบราณ มีวินัย ทำงานหนักรู้จักผิดชอบชั่วดี'
 } else if (moon_conjunction === "uranus "){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมยูเรนัส'
+    document.getElementById('moon_conjunctionb').innerHTML = 'ดึงดูดเหตุการณ์แปลกๆที่อธิบายไม่ได้เข้าหาตัว มีญาณแวบเข้มข้นชัดเจน'
 } else if (moon_conjunction === "neptune"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมเนปจูน'
+    document.getElementById('moon_conjunctionb').innerHTML = 'มีพรสวรรค์ด้านญาณทิพย์อย่างมาก มีพรสวรรค์ด้านศิลปะและดนตรี จะได้แรงบันดาลใจจากน้ำ'
 } else if (moon_conjunction === "pluto"){
-    document.getElementById('moon_conjunctiona').innerHTML = '• '
-    document.getElementById('moon_conjunctionb').innerHTML = ''
+    document.getElementById('moon_conjunctiona').innerHTML = '• จันทร์กุมพลูโต'
+    document.getElementById('moon_conjunctionb').innerHTML = 'มีอารมณ์เข้มข้น รักอย่างหมดใจ หากเจ็บปวดจะจำฝังใจ'
 }
 if (mercury_conjunction === "moon"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมจันทร์'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "sun"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมอาทิตย์'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "venus"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมศุกร์'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "mars"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมอังคาร'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "jupiter"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมพฤหัส'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "saturn"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมเสาร์'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "uranus "){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมยูเรนัส'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "neptune"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมเนปจูน'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 } else if (mercury_conjunction === "pluto"){
-    document.getElementById('mercury_conjunctiona').innerHTML = '• '
+    document.getElementById('mercury_conjunctiona').innerHTML = '• พุธกุมพลูโต'
     document.getElementById('mercury_conjunctionb').innerHTML = ''
 }
 if (venus_conjunction === "moon"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมจันทร์'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "sun"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมอาทิตย์'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "mercury"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมพุธ'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "mars"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมอังคาร'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "jupiter"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมพฤหัส'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "saturn"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมเสาร์'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "uranus "){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมยูเรนัส'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "neptune"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมเนปจูน'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 } else if (venus_conjunction === "pluto"){
-    document.getElementById('venus_conjunctiona').innerHTML = '• '
+    document.getElementById('venus_conjunctiona').innerHTML = '• ศุกร์กุมพลูโต'
     document.getElementById('venus_conjunctionb').innerHTML = ''
 }
 if (mars_conjunction === "moon"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมจันทร์'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "sun"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมอาทิตย์'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "mercury"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมพุธ'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "venus"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมศุกร์'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "jupiter"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมพฤหัส'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "saturn"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมเสาร์'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "uranus "){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมยูเรนัส'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "neptune"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมเนปจูน'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 } else if (mars_conjunction === "pluto"){
-    document.getElementById('mars_conjunctiona').innerHTML = '• '
+    document.getElementById('mars_conjunctiona').innerHTML = '• อังคารกุมพลูโต'
     document.getElementById('mars_conjunctionb').innerHTML = ''
 }
 if (jupiter_conjunction === "moon"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมจันทร์'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "sun"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมอาทิตย์'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "mercury"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมพุธ'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "venus"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมศุกร์'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "mars"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมอังคาร'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "saturn"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมเสาร์'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "uranus "){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมยูเรนัส'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "neptune"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมเนปจูน'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 } else if (jupiter_conjunction === "pluto"){
-    document.getElementById('jupiter_conjunctiona').innerHTML = '• '
+    document.getElementById('jupiter_conjunctiona').innerHTML = '• พฤหัสกุมพลูโต'
     document.getElementById('jupiter_conjunctionb').innerHTML = ''
 }
 if (saturn_conjunction === "moon"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมจันทร์'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "sun"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมอาทิตย์'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "mercury"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมพุธ'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "venus"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมศุกร์'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "mars"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมอังคาร'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "jupiter"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมพฤหัส'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "uranus "){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมยูเรนัส'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "neptune"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมเนปจูน'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 } else if (saturn_conjunction === "pluto"){
-    document.getElementById('saturn_conjunctiona').innerHTML = '• '
+    document.getElementById('saturn_conjunctiona').innerHTML = '• เสาร์กุมพลูโต'
     document.getElementById('saturn_conjunctionb').innerHTML = ''
 }
 if (uranus_conjunction === "moon"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมจันทร์'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "sun"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมอาทิตย์'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "mercury"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมพุธ'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "venus"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมศุกร์'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "mars"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมอังคาร'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "jupiter"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมพฤหัส'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "saturn "){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมเสาร์'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "neptune"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมเนปจูน'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 } else if (uranus_conjunction === "pluto"){
-    document.getElementById('uranus_conjunctiona').innerHTML = '• '
+    document.getElementById('uranus_conjunctiona').innerHTML = '• ยูเรนัสกุมพลูโต'
     document.getElementById('uranus_conjunctionb').innerHTML = ''
 }
 if (neptune_conjunction === "moon"){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมจันทร์'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "sun"){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมอาทิตย์'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "mercury"){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมพุธ'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "venus"){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมศุกร์'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "mars"){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมอังคาร'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "jupiter"){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมพฤหัส'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "saturn "){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมเสาร์'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "uranus "){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมยูเรนัส'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 } else if (neptune_conjunction === "pluto"){
-    document.getElementById('neptune_conjunctiona').innerHTML = '• '
+    document.getElementById('neptune_conjunctiona').innerHTML = '• เนปจูนกุมพลูโต'
     document.getElementById('neptune_conjunctionb').innerHTML = ''
 }
 if (pluto_conjunction === "moon"){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมจันทร์'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "sun"){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมอาทิตย์'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "mercury"){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมพุธ'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "venus"){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมศุกร์'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "mars"){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมอังคาร'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "jupiter"){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมพฤหัส'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "saturn "){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมเสาร์'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "uranus "){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมยูเรนัส'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 } else if (pluto_conjunction === "neptune"){
-    document.getElementById('pluto_conjunctiona').innerHTML = '• '
+    document.getElementById('pluto_conjunctiona').innerHTML = '• พลูโตกุมเนปจูน'
     document.getElementById('pluto_conjunctionb').innerHTML = ''
 }
+if (sun_trine === "moon"){
+    document.getElementById('sun_trinea').innerHTML = '• อาทิตย์ตรีโกณจันทร์'
+    document.getElementById('sun_trineb').innerHTML = 'พลังไหลเวียนอย่างอิสระ ไม่ปิดกั้นความรู้สึก ได้รับการเลี้ยงดูที่อบอุ่น มีชีวิตคู่ที่ดี'
+}else if (sun_trine === "mars"){
+    document.getElementById('sun_trinea').innerHTML = '• อาทิตย์ตรีโกณอังคาร'
+    document.getElementById('sun_trineb').innerHTML = 'อยู่ในสภาวะสมดุลแข็งแรงดี ตัดสินใจเด็ดขาด เป็นผู้นำสูง พลังมุ่งมั่น พลังทางเพศแข็งแรง'
+} else if (sun_trine === "jupiter"){
+    document.getElementById('sun_trinea').innerHTML = '• อาทิตย์ตรีโกณพฤหัส'
+    document.getElementById('sun_trineb').innerHTML = 'มีพลังกระตือรือร้นมากมาย ยิ้มได้เมื่อภัยมา ใจกว้างใจดี มักโชคดีเสมอ'
+} else if (sun_trine === "saturn"){
+    document.getElementById('sun_trinea').innerHTML = '• อาทิตย์ตรีโกณเสาร์'
+    document.getElementById('sun_trineb').innerHTML = 'มองโลกความเป็นจริง รอบคอบอยิ่ง เก่งเรื่องบริหารจัดการ อนุรักษ์นิยม รู้จักกินรู้จักใช้'
+} else if (sun_trine === "uranus "){
+    document.getElementById('sun_trinea').innerHTML = '• อาทิตย์ตรีโกณยูเรนัส'
+    document.getElementById('sun_trineb').innerHTML = 'ไม่ยอมเชื่ออะไรง่ายๆจนกว่าจะถูกพิสูจน์ เก่งทางด้านค้นคว้าสิ่งใหม่ มีเสน่ห์มาก'
+} else if (sun_trine === "neptune"){
+    document.getElementById('sun_trinea').innerHTML = '• อาทิตย์ตรีโกณเนปจูน'
+    document.getElementById('sun_trineb').innerHTML = 'เป็นมุมดีที่สุดต่อดวงชะตา ยึดมั่นในอุดมคติ เป็นนักฝันที่ควบคุมตัวเองให้อยู่บนโลกความจริงได้ มีพรสวรรค์ทางธรรมะและญาณมาก จะเป็นผู้นำทางทางจิตวิญญาณที่ดี'
+} else if (sun_trine === "pluto"){
+    document.getElementById('sun_trinea').innerHTML = '• อาทิตย์ตรีโกณพลูโต'
+    document.getElementById('sun_trineb').innerHTML = 'มีเสน่ห์ดึงดูดคนหมู่มาก มีอำนาจในตนเอง จะประสบบาดแผลในใจหรือการสูญเสียหลายครั้ง'
+}
+if (moon_trine === "mercury"){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณพุธ'
+    document.getElementById('moon_trineb').innerHTML = 'มีสังหรณ์แม่น มีชื่อเสียงในหมู่เพศหญิง ใช้คำพูดดีกล่อมลิงหลับได้'
+} else if (moon_trine === "venus"){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณศุกร์'
+    document.getElementById('moon_trineb').innerHTML = 'มีความสัมพันธ์ที่ดีกับมารดา มีแต่คนนิยมรักใคร่ ไปไหนใครก็รัก'
+} else if (moon_trine === "mars"){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณอังคาร'
+    document.getElementById('moon_trineb').innerHTML = 'กล้าต่อสู้ยืดหยัดในสิ่งที่ตนเชื่อ อารมณ์ร้อนแต่ควบคุมได้ดี'
+} else if (moon_trine === "jupiter"){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณพฤหัส'
+    document.getElementById('moon_trineb').innerHTML = 'อุทิศตนเพื่อครอบครัว จะได้รับความมั่งคั่งจากมรดกทางแม่หรือการค้า มีความกรุณาเห็นใจผู้อื่น ใจบุญกับคนต่างด้าวต่างแดน'
+} else if (moon_trine === "saturn"){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณเสาร์'
+    document.getElementById('moon_trineb').innerHTML = 'มีสามัญสำนึกดี รับผิดชอบ บริหารจัดการได้ดี ซื่อตรง รอบครอบเรื่องธุรกิจ อนุรักษนิยม'
+} else if (moon_trine === "uranus "){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณยูเรนัส'
+    document.getElementById('moon_trineb').innerHTML = 'คิดนอกกรอบ มีญาณพิเศษที่คมชัด มีหัวเรื่องโหราศาสตร์ เป็นพรสวรรค์ติดมาแต่อดีตชาติ'
+} else if (moon_trine === "neptune"){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณเนปจูน'
+    document.getElementById('moon_trineb').innerHTML = 'มีกระแสรับความรู้สึกคนรอบข้างสูง ฝันแม่นยำจะนำทางให้ได้ดีมาก มีพรสวรรค์ทางศิลปะ กวีนิพนธ์ และดนตรี'
+} else if (moon_trine === "pluto"){
+    document.getElementById('moon_trinea').innerHTML = '• จันทร์ตรีโกณพลูโต'
+    document.getElementById('moon_trineb').innerHTML = 'มีความมุ่งมั่นอย่างแรงกล้า หากหัวใจปรารถนา'
+}
+if (mercury_trine === "moon"){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณจันทร์'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "sun"){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณอาทิตย์'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "venus"){
+    document.getElementById('mercury_trinea').innerHTML = '• ตรีโกณศุกร์'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "mars"){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณอังคาร'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "jupiter"){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณพฤหัส'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "saturn"){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณเสาร์'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "uranus "){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณยูเรนัส'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "neptune"){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณเนปจูน'
+    document.getElementById('mercury_trineb').innerHTML = ''
+} else if (mercury_trine === "pluto"){
+    document.getElementById('mercury_trinea').innerHTML = '• พุธตรีโกณพลูโต'
+    document.getElementById('mercury_trineb').innerHTML = ''
+}
+if (venus_trine === "moon"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณจันทร์'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "sun"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณอาทิตย์'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "mercury"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณพุธ'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "mars"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณอังคาร'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "jupiter"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณพฤหัส'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "saturn"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณเสาร์'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "uranus "){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณยูเรนัส'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "neptune"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณเนปจูน'
+    document.getElementById('venus_trineb').innerHTML = ''
+} else if (venus_trine === "pluto"){
+    document.getElementById('venus_trinea').innerHTML = '• ศุกร์ตรีโกณพลูโต'
+    document.getElementById('venus_trineb').innerHTML = ''
+}
+if (mars_trine === "moon"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณจันทร์'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "sun"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณอาทิตย์'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "mercury"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณพุธ'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "venus"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณศุกร์'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "jupiter"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณพฤหัส'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "saturn"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณเสาร์'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "uranus "){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณยูเรนัส'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "neptune"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณเนปจูน'
+    document.getElementById('mars_trineb').innerHTML = ''
+} else if (mars_trine === "pluto"){
+    document.getElementById('mars_trinea').innerHTML = '• อังคารตรีโกณพลูโต'
+    document.getElementById('mars_trineb').innerHTML = ''
+}
+if (jupiter_trine === "moon"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณจันทร์'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "sun"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณอาทิตย์'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "mercury"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณพุธ'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "venus"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณศุกร์'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "mars"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณอังคาร'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "saturn"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณเสาร์'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "uranus "){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณยูเรนัส'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "neptune"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณเนปจูน'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+} else if (jupiter_trine === "pluto"){
+    document.getElementById('jupiter_trinea').innerHTML = '• พฤหัสตรีโกณ'
+    document.getElementById('jupiter_trineb').innerHTML = ''
+}
+if (saturn_trine === "moon"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณจันทร์'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "sun"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณอาทิตย์'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "mercury"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณพุธ'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "venus"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณศุกร์'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "mars"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณอังคาร'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "jupiter"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณพฤหัส'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "uranus "){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณยูเรนัส'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "neptune"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณเนปจูน'
+    document.getElementById('saturn_trineb').innerHTML = ''
+} else if (saturn_trine === "pluto"){
+    document.getElementById('saturn_trinea').innerHTML = '• เสาร์ตรีโกณพลูโต'
+    document.getElementById('saturn_trineb').innerHTML = ''
+}
+if (uranus_trine === "moon"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณจันทร์'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "sun"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณอาทิตย์'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "mercury"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณพุธ'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "venus"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณศุกร์'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "mars"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณอังคาร'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "jupiter"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณพฤหัส'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "saturn "){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณเสาร์'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "neptune"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณเนปจูน'
+    document.getElementById('uranus_trineb').innerHTML = ''
+} else if (uranus_trine === "pluto"){
+    document.getElementById('uranus_trinea').innerHTML = '• ยูเรนัสตรีโกณพลูโต'
+    document.getElementById('uranus_trineb').innerHTML = ''
+}
+if (neptune_trine === "moon"){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณจันทร์'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "sun"){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณอาทิตย์'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "mercury"){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณพุธ'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "venus"){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณศุกร์'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "mars"){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณอังคาร'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "jupiter"){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณพฤหัส'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "saturn "){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณเสาร์'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "uranus "){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณยูเรนัส'
+    document.getElementById('neptune_trineb').innerHTML = ''
+} else if (neptune_trine === "pluto"){
+    document.getElementById('neptune_trinea').innerHTML = '• เนปจูนตรีโกณพลูโต'
+    document.getElementById('neptune_trineb').innerHTML = ''
+}
+if (pluto_trine === "moon"){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณจันทร์'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "sun"){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณอาทิตย์'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "mercury"){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณพุธ'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "venus"){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณศุกร์'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "mars"){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณอังคาร'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "jupiter"){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณพฤหัส'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "saturn "){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณเสาร์'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "uranus "){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณยูเรนัส'
+    document.getElementById('pluto_trineb').innerHTML = ''
+} else if (pluto_trine === "neptune"){
+    document.getElementById('pluto_trinea').innerHTML = '• พลูโตตรีโกณเนปจูน'
+    document.getElementById('pluto_trineb').innerHTML = ''
+}
+if (sun_sextile === "moon"){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคจันทร์'
+    document.getElementById('sun_sextileb').innerHTML = 'เป็นที่รู้จักเพราะเป็นคนอารมณ์ดี'
+} else if (sun_sextile === "venus"){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคศุกร์'
+    document.getElementById('sun_sextileb').innerHTML = 'มีคนนิยมชมชอบ เป็นคนโชคดี มองโลกอย่างมีความหวังเสมอ'
+} else if (sun_sextile === "mars"){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคอังคาร'
+    document.getElementById('sun_sextileb').innerHTML = 'ว่องไว กล้าหาญ เป็นนักริเริ่ม ไม่กลัววความลำบาก'
+} else if (sun_sextile === "jupiter"){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคพฤหัส'
+    document.getElementById('sun_sextileb').innerHTML = 'มองชีวิตให้เป็นน้ำไม่เต็มแก้ว จะประสบความสำเร็จเสมอ'
+} else if (sun_sextile === "saturn"){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคเสาร์'
+    document.getElementById('sun_sextileb').innerHTML = 'มีวินัยดี เป็นนักปฏิบัติ อดทน มีสติ'
+} else if (sun_sextile === "uranus "){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคยูเรนัส'
+    document.getElementById('sun_sextileb').innerHTML = 'เหมาะแก่ชะตานักประดิษฐ์มาก'
+} else if (sun_sextile === "neptune"){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคเนปจูน'
+    document.getElementById('sun_sextileb').innerHTML = 'เก่งทางด้านจินตนาการภาพนิมิตร มีสัมผัสที่หกดีมาก มีอุดมการณ์ จิตใจเผื่อแผ่ รักสัตว์'
+} else if (sun_sextile === "pluto"){
+    document.getElementById('sun_sextilea').innerHTML = '• อาทิตย์โยคพลูโต'
+    document.getElementById('sun_sextileb').innerHTML = 'แน่วแน่ ตั้งใจทำอะไรจะสำเร็จด้วยดี มีกำลังกายและใจที่แข็งแกร่ง เป็นผู้นำได้ดี'
+}
+if (moon_sextile === "sun"){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคอาทิตย์'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "mercury"){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคพุธ'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "venus"){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคศุกร์'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "mars"){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคอังคาร'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "jupiter"){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคพฤหัส'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "saturn"){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคเสาร์'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "uranus "){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคยูเรนัส'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "neptune"){
+    document.getElementById('moon_sextilea').innerHTML = '• จันทร์โยคเนปจูน'
+    document.getElementById('moon_sextileb').innerHTML = ''
+} else if (moon_sextile === "pluto"){
+    document.getElementById('moon_sextilea').innerHTML = '• โยคพลูโต'
+    document.getElementById('moon_sextileb').innerHTML = ''
+}
+if (mercury_sextile === "moon"){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคจันทร์'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "sun"){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคอาทิตย์'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "venus"){
+    document.getElementById('mercury_sextilea').innerHTML = '• โยคศุกร์'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "mars"){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคอังคาร'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "jupiter"){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคพฤหัส'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "saturn"){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคเสาร์'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "uranus "){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคยูเรนัส'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "neptune"){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคเนปจูน'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+} else if (mercury_sextile === "pluto"){
+    document.getElementById('mercury_sextilea').innerHTML = '• พุธโยคพลูโต'
+    document.getElementById('mercury_sextileb').innerHTML = ''
+}
+if (venus_sextile === "moon"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคจันทร์'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "sun"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคอาทิตย์'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "mercury"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคพุธ'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "mars"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคอังคาร'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "jupiter"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคพฤหัส'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "saturn"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคเสาร์'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "uranus "){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคยูเรนัส'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "neptune"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคเนปจูน'
+    document.getElementById('venus_sextileb').innerHTML = ''
+} else if (venus_sextile === "pluto"){
+    document.getElementById('venus_sextilea').innerHTML = '• ศุกร์โยคพลูโต'
+    document.getElementById('venus_sextileb').innerHTML = ''
+}
+if (mars_sextile === "moon"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคจันทร์'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "sun"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคอาทิตย์'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "mercury"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคพุธ'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "venus"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคศุกร์'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "jupiter"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคพฤหัส'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "saturn"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคเสาร์'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "uranus "){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคยูเรนัส'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "neptune"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคเนปจูน'
+    document.getElementById('mars_sextileb').innerHTML = ''
+} else if (mars_sextile === "pluto"){
+    document.getElementById('mars_sextilea').innerHTML = '• อังคารโยคพลูโต'
+    document.getElementById('mars_sextileb').innerHTML = ''
+}
+if (jupiter_sextile === "moon"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคจันทร์'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "sun"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคอาทิตย์'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "mercury"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคพุธ'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "venus"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคศุกร์'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "mars"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคอังคาร'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "saturn"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคเสาร์'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "uranus "){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคยูเรนัส'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "neptune"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยคเนปจูน'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+} else if (jupiter_sextile === "pluto"){
+    document.getElementById('jupiter_sextilea').innerHTML = '• พฤหัสโยค'
+    document.getElementById('jupiter_sextileb').innerHTML = ''
+}
+if (saturn_sextile === "moon"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคจันทร์'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "sun"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคอาทิตย์'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "mercury"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคพุธ'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "venus"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคศุกร์'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "mars"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคอังคาร'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "jupiter"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคพฤหัส'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "uranus "){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคยูเรนัส'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "neptune"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคเนปจูน'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+} else if (saturn_sextile === "pluto"){
+    document.getElementById('saturn_sextilea').innerHTML = '• เสาร์โยคพลูโต'
+    document.getElementById('saturn_sextileb').innerHTML = ''
+}
+if (uranus_sextile === "moon"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคจันทร์'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "sun"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคอาทิตย์'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "mercury"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคพุธ'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "venus"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคศุกร์'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "mars"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคอังคาร'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "jupiter"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคพฤหัส'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "saturn "){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคเสาร์'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "neptune"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคเนปจูน'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+} else if (uranus_sextile === "pluto"){
+    document.getElementById('uranus_sextilea').innerHTML = '• ยูเรนัสโยคพลูโต'
+    document.getElementById('uranus_sextileb').innerHTML = ''
+}
+if (neptune_sextile === "moon"){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคจันทร์'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "sun"){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคอาทิตย์'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "mercury"){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคพุธ'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "venus"){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคศุกร์'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "mars"){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคอังคาร'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "jupiter"){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคพฤหัส'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "saturn "){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคเสาร์'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "uranus "){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคยูเรนัส'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+} else if (neptune_sextile === "pluto"){
+    document.getElementById('neptune_sextilea').innerHTML = '• เนปจูนโยคพลูโต'
+    document.getElementById('neptune_sextileb').innerHTML = ''
+}
+if (pluto_sextile === "moon"){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคจันทร์'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "sun"){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคอาทิตย์'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "mercury"){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคพุธ'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "venus"){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคศุกร์'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "mars"){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคอังคาร'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "jupiter"){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคพฤหัส'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "saturn "){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคเสาร์'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "uranus "){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคยูเรนัส'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+} else if (pluto_sextile === "neptune"){
+    document.getElementById('pluto_sextilea').innerHTML = '• พลูโตโยคเนปจูน'
+    document.getElementById('pluto_sextileb').innerHTML = ''
+}
+if (sun_square === "moon"){
+    document.getElementById('sun_squarea').innerHTML = '• อาทิตย์ฉากจันทร์'
+    document.getElementById('sun_squareb').innerHTML = 'มีความรู้สึกขัดแย้งในตัวเอง ปิดกั้นอารมณ์แสดงออกเป็นความสับสน พ่อแม่เป็นแบบอย่างไม่ดีในชีวิตคู่ จนกลัวการแต่งงาน'
+} else if (sun_square === "mars"){
+    document.getElementById('sun_squarea').innerHTML = '• อาทิตย์ฉากอังคาร'
+    document.getElementById('sun_squareb').innerHTML = 'ชอบโต้เถียง ใจร้อน โทสะแรง'
+} else if (sun_square === "jupiter"){
+    document.getElementById('sun_squarea').innerHTML = '• อาทิตย์ฉากพฤหัส'
+    document.getElementById('sun_squareb').innerHTML = 'เป็นคนประมาท ชอบทำอะไรใหญ่เกินตัว'
+} else if (sun_square === "saturn"){
+    document.getElementById('sun_squarea').innerHTML = '• อาทิตย์ฉากเสาร์'
+    document.getElementById('sun_squareb').innerHTML = 'ดวงชะตากำลังทดสอบให้เจอความยากลำบากกว่าผู้อื่นอยู่ ต้องฝึกจิตให้แข็ง'
+} else if (sun_square === "uranus "){
+    document.getElementById('sun_squarea').innerHTML = '• อาทิตย์ฉากยูเรนัส'
+    document.getElementById('sun_squareb').innerHTML = 'ดื้อรั้นอยู่ด้วยยาก มีไอเดียมากแต่ทำจริงไม่ได้'
+} else if (sun_square === "neptune"){
+    document.getElementById('sun_squarea').innerHTML = '• อาทิตย์ฉากเนปจูน'
+    document.getElementById('sun_squareb').innerHTML = 'จมอยู่กับการหลอกตัวเอง หลีกเลี่ยงหน้าที่ที่ต้องรับผิดชอบ ช่วงหนึ่งของชีวิตต้องใช้ชีวิตแบบปิดบังหลบๆซ่อนๆ'
+} else if (sun_square === "pluto"){
+    document.getElementById('sun_squarea').innerHTML = '• อาทิตย์ฉากพลูโต'
+    document.getElementById('sun_squareb').innerHTML = 'มุ่งมั่นแรงกล้าตามที่ตนต้องการ ชอบควบคุมบงการผู้อื่นให้ทำตามที่ตนปรารถนา'
+}
+if (moon_square === "sun"){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากอาทิตย์'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "mercury"){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากพุธ'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "venus"){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากศุกร์'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "mars"){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากอังคาร'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "jupiter"){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากพฤหัส'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "saturn"){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากเสาร์'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "uranus "){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากยูเรนัส'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "neptune"){
+    document.getElementById('moon_squarea').innerHTML = '• จันทร์ฉากเนปจูน'
+    document.getElementById('moon_squareb').innerHTML = ''
+} else if (moon_square === "pluto"){
+    document.getElementById('moon_squarea').innerHTML = '• ฉากพลูโต'
+    document.getElementById('moon_squareb').innerHTML = ''
+}
+if (mercury_square === "moon"){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากจันทร์'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "sun"){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากอาทิตย์'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "venus"){
+    document.getElementById('mercury_squarea').innerHTML = '• ฉากศุกร์'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "mars"){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากอังคาร'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "jupiter"){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากพฤหัส'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "saturn"){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากเสาร์'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "uranus "){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากยูเรนัส'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "neptune"){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากเนปจูน'
+    document.getElementById('mercury_squareb').innerHTML = ''
+} else if (mercury_square === "pluto"){
+    document.getElementById('mercury_squarea').innerHTML = '• พุธฉากพลูโต'
+    document.getElementById('mercury_squareb').innerHTML = ''
+}
+if (venus_square === "moon"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากจันทร์'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "sun"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากอาทิตย์'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "mercury"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากพุธ'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "mars"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากอังคาร'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "jupiter"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากพฤหัส'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "saturn"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากเสาร์'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "uranus "){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากยูเรนัส'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "neptune"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากเนปจูน'
+    document.getElementById('venus_squareb').innerHTML = ''
+} else if (venus_square === "pluto"){
+    document.getElementById('venus_squarea').innerHTML = '• ศุกร์ฉากพลูโต'
+    document.getElementById('venus_squareb').innerHTML = ''
+}
+if (mars_square === "moon"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากจันทร์'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "sun"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากอาทิตย์'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "mercury"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากพุธ'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "venus"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากศุกร์'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "jupiter"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากพฤหัส'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "saturn"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากเสาร์'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "uranus "){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากยูเรนัส'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "neptune"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากเนปจูน'
+    document.getElementById('mars_squareb').innerHTML = ''
+} else if (mars_square === "pluto"){
+    document.getElementById('mars_squarea').innerHTML = '• อังคารฉากพลูโต'
+    document.getElementById('mars_squareb').innerHTML = ''
+}
+if (jupiter_square === "moon"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากจันทร์'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "sun"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากอาทิตย์'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "mercury"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากพุธ'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "venus"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากศุกร์'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "mars"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากอังคาร'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "saturn"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากเสาร์'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "uranus "){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากยูเรนัส'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "neptune"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉากเนปจูน'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+} else if (jupiter_square === "pluto"){
+    document.getElementById('jupiter_squarea').innerHTML = '• พฤหัสฉาก'
+    document.getElementById('jupiter_squareb').innerHTML = ''
+}
+if (saturn_square === "moon"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากจันทร์'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "sun"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากอาทิตย์'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "mercury"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากพุธ'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "venus"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากศุกร์'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "mars"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากอังคาร'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "jupiter"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากพฤหัส'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "uranus "){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากยูเรนัส'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "neptune"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากเนปจูน'
+    document.getElementById('saturn_squareb').innerHTML = ''
+} else if (saturn_square === "pluto"){
+    document.getElementById('saturn_squarea').innerHTML = '• เสาร์ฉากพลูโต'
+    document.getElementById('saturn_squareb').innerHTML = ''
+}
+if (uranus_square === "moon"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากจันทร์'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "sun"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากอาทิตย์'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "mercury"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากพุธ'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "venus"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากศุกร์'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "mars"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากอังคาร'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "jupiter"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากพฤหัส'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "saturn "){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากเสาร์'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "neptune"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากเนปจูน'
+    document.getElementById('uranus_squareb').innerHTML = ''
+} else if (uranus_square === "pluto"){
+    document.getElementById('uranus_squarea').innerHTML = '• ยูเรนัสฉากพลูโต'
+    document.getElementById('uranus_squareb').innerHTML = ''
+}
+if (neptune_square === "moon"){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากจันทร์'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "sun"){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากอาทิตย์'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "mercury"){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากพุธ'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "venus"){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากศุกร์'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "mars"){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากอังคาร'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "jupiter"){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากพฤหัส'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "saturn "){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากเสาร์'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "uranus "){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากยูเรนัส'
+    document.getElementById('neptune_squareb').innerHTML = ''
+} else if (neptune_square === "pluto"){
+    document.getElementById('neptune_squarea').innerHTML = '• เนปจูนฉากพลูโต'
+    document.getElementById('neptune_squareb').innerHTML = ''
+}
+if (pluto_square === "moon"){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากจันทร์'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "sun"){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากอาทิตย์'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "mercury"){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากพุธ'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "venus"){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากศุกร์'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "mars"){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากอังคาร'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "jupiter"){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากพฤหัส'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "saturn "){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากเสาร์'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "uranus "){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากยูเรนัส'
+    document.getElementById('pluto_squareb').innerHTML = ''
+} else if (pluto_square === "neptune"){
+    document.getElementById('pluto_squarea').innerHTML = '• พลูโตฉากเนปจูน'
+    document.getElementById('pluto_squareb').innerHTML = ''
+}
+if (sun_opposition === "moon"){
+    document.getElementById('sun_oppositiona').innerHTML = '• อาทิตย์เล็งจันทร์'
+    document.getElementById('sun_oppositionb').innerHTML = 'มีปัญหาเรื่องอารมณ์ความสัมพันธ์ที่ขัดแย้งในตัวเอง'
+} else if (sun_opposition === "mars"){
+    document.getElementById('sun_oppositiona').innerHTML = '• อาทิตย์เล็งอังคาร'
+    document.getElementById('sun_oppositionb').innerHTML = 'ชอบการต่อสู้สงคราม ไม่ชอบเห็นคนฝั่งตรงข้ามกับตนต่อหน้า จะเกิดการต่อสู้'
+} else if (sun_opposition === "jupiter"){
+    document.getElementById('sun_oppositiona').innerHTML = '• อาทิตย์เล็งพฤหัส'
+    document.getElementById('sun_oppositionb').innerHTML = 'มองโลกในแง่ดีจนประมาท จับทำอะไรจากเล็กๆกลายเป็นยิ่งใหญ่ได้ พลาดท่าอย่างไรก็ลุกขึ้นมาใหม่ได้เสมอ'
+} else if (sun_opposition === "saturn"){
+    document.getElementById('sun_oppositiona').innerHTML = '• อาทิตย์เล็งเสาร์'
+    document.getElementById('sun_oppositionb').innerHTML = 'ภายนอกเข้มแข็งแต่ภายในอ่อนแอไม่มั่นใจในตนเอง'
+} else if (sun_opposition === "uranus "){
+    document.getElementById('sun_oppositiona').innerHTML = '• อาทิตย์เล็งยูเรนัส'
+    document.getElementById('sun_oppositionb').innerHTML = 'ดื้อ ใจเร็วทำอะไรไม่ทน ทำอะไรต่อต้านสังคม'
+} else if (sun_opposition === "neptune"){
+    document.getElementById('sun_oppositiona').innerHTML = '• อาทิตย์เล็งเนปจูน'
+    document.getElementById('sun_oppositionb').innerHTML = 'มักจะไม่พูดความจริง ไม่ซื่อสัตย์ เป็นตั้งแต่เด็ก ชอบใช้ชีวิตอยู่ในโลกความฝันมากกว่าเผชิญความเป็นจริง'
+} else if (sun_opposition === "pluto"){
+    document.getElementById('sun_oppositiona').innerHTML = '• อาทิตย์เล็งพลูโต'
+    document.getElementById('sun_oppositionb').innerHTML = 'มุ่งมั่นอยากเป็นผู้นำจนเป็นพิษ สู่ความลุ่มหลงในอำนาจ เซ็กส์ เงินทอง'
+}
+if (moon_opposition === "sun"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งอาทิตย์'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "mercury"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งพุธ'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "venus"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งศุกร์'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "mars"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งอังคาร'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "jupiter"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งพฤหัส'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "saturn"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งเสาร์'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "uranus "){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งยูเรนัส'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "neptune"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งเนปจูน'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+} else if (moon_opposition === "pluto"){
+    document.getElementById('moon_oppositiona').innerHTML = '• จันทร์เล็งพลูโต'
+    document.getElementById('moon_oppositionb').innerHTML = ''
+}
+if (mercury_opposition === "moon"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งจันทร์'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "sun"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งอาทิตย์'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "venus"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• เล็งศุกร์'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "mars"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งอังคาร'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "jupiter"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งพฤหัส'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "saturn"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งเสาร์'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "uranus "){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งยูเรนัส'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "neptune"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งเนปจูน'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+} else if (mercury_opposition === "pluto"){
+    document.getElementById('mercury_oppositiona').innerHTML = '• พุธเล็งพลูโต'
+    document.getElementById('mercury_oppositionb').innerHTML = ''
+}
+if (venus_opposition === "moon"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งจันทร์'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "sun"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งอาทิตย์'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "mercury"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งพุธ'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "mars"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งอังคาร'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "jupiter"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งพฤหัส'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "saturn"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งเสาร์'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "uranus "){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งยูเรนัส'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "neptune"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งเนปจูน'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+} else if (venus_opposition === "pluto"){
+    document.getElementById('venus_oppositiona').innerHTML = '• ศุกร์เล็งพลูโต'
+    document.getElementById('venus_oppositionb').innerHTML = ''
+}
+if (mars_opposition === "moon"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งจันทร์'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "sun"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งอาทิตย์'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "mercury"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งพุธ'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "venus"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งศุกร์'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "jupiter"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งพฤหัส'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "saturn"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งเสาร์'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "uranus "){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งยูเรนัส'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "neptune"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งเนปจูน'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+} else if (mars_opposition === "pluto"){
+    document.getElementById('mars_oppositiona').innerHTML = '• อังคารเล็งพลูโต'
+    document.getElementById('mars_oppositionb').innerHTML = ''
+}
+if (jupiter_opposition === "moon"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งจันทร์'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "sun"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งอาทิตย์'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "mercury"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งพุธ'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "venus"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งศุกร์'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "mars"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งอังคาร'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "saturn"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งเสาร์'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "uranus "){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งยูเรนัส'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "neptune"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็งเนปจูน'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+} else if (jupiter_opposition === "pluto"){
+    document.getElementById('jupiter_oppositiona').innerHTML = '• พฤหัสเล็ง'
+    document.getElementById('jupiter_oppositionb').innerHTML = ''
+}
+if (saturn_opposition === "moon"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งจันทร์'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "sun"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งอาทิตย์'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "mercury"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งพุธ'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "venus"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งศุกร์'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "mars"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งอังคาร'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "jupiter"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งพฤหัส'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "uranus "){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งยูเรนัส'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "neptune"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งเนปจูน'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+} else if (saturn_opposition === "pluto"){
+    document.getElementById('saturn_oppositiona').innerHTML = '• เสาร์เล็งพลูโต'
+    document.getElementById('saturn_oppositionb').innerHTML = ''
+}
+if (uranus_opposition === "moon"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งจันทร์'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "sun"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งอาทิตย์'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "mercury"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งพุธ'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "venus"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งศุกร์'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "mars"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งอังคาร'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "jupiter"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งพฤหัส'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "saturn "){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งเสาร์'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "neptune"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งเนปจูน'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+} else if (uranus_opposition === "pluto"){
+    document.getElementById('uranus_oppositiona').innerHTML = '• ยูเรนัสเล็งพลูโต'
+    document.getElementById('uranus_oppositionb').innerHTML = ''
+}
+if (neptune_opposition === "moon"){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งจันทร์'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "sun"){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งอาทิตย์'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "mercury"){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งพุธ'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "venus"){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งศุกร์'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "mars"){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งอังคาร'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "jupiter"){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งพฤหัส'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "saturn "){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งเสาร์'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "uranus "){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งยูเรนัส'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+} else if (neptune_opposition === "pluto"){
+    document.getElementById('neptune_oppositiona').innerHTML = '• เนปจูนเล็งพลูโต'
+    document.getElementById('neptune_oppositionb').innerHTML = ''
+}
+if (pluto_opposition === "moon"){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งจันทร์'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "sun"){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งอาทิตย์'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "mercury"){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งพุธ'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "venus"){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งศุกร์'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "mars"){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งอังคาร'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "jupiter"){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งพฤหัส'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "saturn "){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งเสาร์'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "uranus "){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งยูเรนัส'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+} else if (pluto_opposition === "neptune"){
+    document.getElementById('pluto_oppositiona').innerHTML = '• พลูโตเล็งเนปจูน'
+    document.getElementById('pluto_oppositionb').innerHTML = ''
+}
+
+if (grand_trine.checked){
+    document.getElementById('grand_trinea').innerHTML = '• รูปมหาตรีโกณ'
+    document.getElementById('grand_trineb').innerHTML = 'เจ้าชะตาเป็นผู้มีพรสวรรค์ซ่อนเร้น มีบุญเก่าหนุนนำ'
+} if (kite.checked){
+    document.getElementById('kitea').innerHTML = '• รูปว่าว'
+    document.getElementById('kiteb').innerHTML = 'เจ้าชะตาจะสบายเกินตัว'
+} if (grand_cross.checked){
+    document.getElementById('grand_crossa').innerHTML = '• รูปมหาจตุโกณ'
+    document.getElementById('grand_crossb').innerHTML = 'เจ้าชะตาจะใช้พลังหมดเพื่อต่อสู้เพื่ออุดมการณ์ จะพบเจออุปสรรคมากมายก่อนถึงจุดหมาย'
+} if (t_square.checked){
+    document.getElementById('t_squarea').innerHTML = '• รูปไม้ฉาก'
+    document.getElementById('t_squareb').innerHTML = 'เจ้าชะตาจะมีชีวิตขัดแย้งภายในอย่างใหญ่หลวง ถ้าจัดทิศทางบริหารวิกฤติได้จะนำความสำเร็จยิ่งใหญ่มาหา'
+} if (rectangle.checked){
+    document.getElementById('rectanglea').innerHTML = '• รูปสี่เหลี่ยมผืนผ้า'
+    document.getElementById('rectangleb').innerHTML = 'เป็นรูปแบบธรรมดาไม่มีคำทำนาย'
+} if (yod.checked){
+    document.getElementById('yoda').innerHTML = '• รูปยอด'
+    document.getElementById('yodb').innerHTML = 'ความท้าทายสูงสุดและเป้าหมายสูงสุดของชะตา'
+} if (seesaw.checked){
+    document.getElementById('seesawa').innerHTML = '• รูปทรงชักเย่อ'
+    document.getElementById('seesawb').innerHTML = 'เจ้าชะตาใฝ่หาสมดุลชีวิต แต่หาได้ยากยิ่ง'
+} if (locomotive.checked){
+    document.getElementById('locomotivea').innerHTML = '• รูป Locomotive'
+    document.getElementById('locomotiveb').innerHTML = 'เจ้าชะตามีแรงขับดันสู่เป้าหมายสูงมาก'
+} if (bucket.checked){
+    document.getElementById('bucketa').innerHTML = '• รูปดวงถัง'
+    document.getElementById('bucketb').innerHTML = 'เจ้าชะตามักพุ่งเป้ามุ่งมั่นเรื่องเดียวจนไม่นำพาเรื่องอื่นใดทั้งหมด'
+} if (bundle.checked){
+    document.getElementById('bundlea').innerHTML = '• รูปดวงมัด'
+    document.getElementById('bundleb').innerHTML = 'เจ้าชะตามีโอกาสเป็นใหญ่ในแผ่นดิน'
+} if (splay.checked){
+    document.getElementById('splaya').innerHTML = '• รูปดวงสามง่าม'
+    document.getElementById('splayb').innerHTML = 'เจ้าชะตามีคุณสมบัติมั่นคงจะทำอะไรสำเร็จด้วยความประณีตงดงาม'
+} if (splash.checked){
+    document.getElementById('splasha').innerHTML = '• รูปดวงกระจาย'
+    document.getElementById('splashb').innerHTML = 'เจ้าชะตาเก่งในหลายเรื่องและสนใจงานหลากหลาย แต่ไม่อาจลงลึกหรือจดจ่อกับอะไรได้'
+}
+
 
 document.getElementById("mydivabc").style.display = "none";
 }
